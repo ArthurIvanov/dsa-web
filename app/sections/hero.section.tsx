@@ -14,7 +14,7 @@ export const HeroSection = () => {
 						</div>
 						<div className="display-flex gap-8 flex-justify-center">
 							<Calendar size={24} />
-							<span className="text-large">27 апреля 2024</span>
+							<span className="text-large">28 апреля 2024</span>
 						</div>
 						<div className="display-flex gap-8 flex-justify-center">
 							<Clock size={24} />
