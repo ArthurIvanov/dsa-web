@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
 import Navbar from "@/app/layout/navbar";
 import Footer from "@/app/layout/footer";
+import { Globals } from "./theme/globals";
 
 export const metadata: Metadata = {
 	title: "Example landing",
@@ -17,8 +17,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
+				<Globals />
 				<Navbar />
-				<main className="main">{children}</main>
+				<main className="main container">{children}</main>
 				<Footer />
 			</body>
 		</html>

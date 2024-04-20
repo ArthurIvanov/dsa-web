@@ -22,6 +22,8 @@ const Navbar = () => {
 					<ul className="display-flex gap-32">
 						{NAV_LINKS.map((link) => (
 							<Link
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-link"
 								href={link.href}
 								key={link.key}
@@ -30,7 +32,13 @@ const Navbar = () => {
 							</Link>
 						))}
 					</ul>
-					<a className="button-primary">Будем на связи</a>
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						className="button-primary"
+					>
+						Записаться на поток
+					</a>
 				</ul>
 			</div>
 		</nav>
