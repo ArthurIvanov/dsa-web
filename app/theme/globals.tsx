@@ -179,7 +179,7 @@ p {
 
 }
 
-.link-inverted {
+.link-inverted, .link-inverted:visited {
 
     color: var(--main-invert-default);
 
