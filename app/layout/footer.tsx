@@ -70,6 +70,7 @@ const Footer = ({ children }: any) => {
 					</li>
 					<li>
 						<a
+							className="link-inverted"
 							target="_blank"
 							rel="noopener noreferrer"
 							href="https://rutube.ru/channel/24000387/"
@@ -82,12 +83,18 @@ const Footer = ({ children }: any) => {
 				<ul>
 					<li className="text-secondary">Документы</li>
 					<li>
-						<Link href={"/documents/forpeople"}>
+						<Link
+							className="link-inverted"
+							href={"/documents/forpeople"}
+						>
 							Публичная оферта для Физ лиц
 						</Link>
 					</li>
 					<li>
-						<Link href={"/documents/forbusiness"}>
+						<Link
+							className="link-inverted"
+							href={"/documents/forbusiness"}
+						>
 							Публичная оферта для Юр лиц
 						</Link>
 					</li>
