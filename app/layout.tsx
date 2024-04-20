@@ -5,8 +5,9 @@ import Footer from "@/app/layout/footer";
 import { Globals } from "./theme/globals";
 
 export const metadata: Metadata = {
-	title: "Example landing",
-	description: "Test ptoject",
+	title: "Design System Architect",
+	description:
+		"Уникальный курс по Архитектуре Дизайн Систем для средних и крупных организаций",
 };
 
 export default function RootLayout({
