@@ -32,6 +32,13 @@ const StyledSection = styled.section<ISection>`
 		color: var(--tertiary-default);
 	}
 
+	@media (max-width: 768px) {
+		height: auto;
+		.section-image {
+			display: none;
+		}
+	}
+
 	.section-content {
 		display: inherit;
 		flex-direction: column;
@@ -66,6 +73,7 @@ export const Section = ({
 	return (
 		<StyledSection invert={invert} src={src} imagePath={imagePath}>
 			<Image
+				className="section-image"
 				min="50%"
 				max="50%"
 				def="50%"
