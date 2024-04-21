@@ -246,7 +246,6 @@ li {
     width: 100%;
     padding: 64px;
     justify-content: center;
-    background-color: #97a7be;
 }
 
 .w-100 {

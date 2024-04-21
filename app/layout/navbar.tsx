@@ -36,6 +36,7 @@ const Navbar = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="button-primary"
+						href="https://t.me/arturdsgn"
 					>
 						Записаться на поток
 					</a>
