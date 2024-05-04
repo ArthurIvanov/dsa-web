@@ -107,6 +107,7 @@ body {
 
 }
 
+
 .grid {
     display: grid;
     grid-template-colums:repeat(12, 1fr);

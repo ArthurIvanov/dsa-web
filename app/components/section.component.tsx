@@ -22,15 +22,8 @@ const StyledSection = styled.section<ISection>`
 	background-color: white;
 	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
 	height: 650px;
-
 	font-size: 18px;
 	line-height: 24px;
-	p,
-	ul,
-	li,
-	span {
-		color: var(--tertiary-default);
-	}
 
 	@media (max-width: 768px) {
 		height: auto;
@@ -83,7 +76,7 @@ export const Section = ({
 
 			<div className="section-content">
 				<h2>{heading}</h2>
-				<>{children}</>
+				{children}
 				<div>
 					<Link className="button-primary" href={src}>
 						{buttonText}
