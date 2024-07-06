@@ -488,11 +488,7 @@ export default function Page() {
 								расторгнуть договор путем направления
 								Исполнителю заявления об отчислении. Заявление
 								об отчислении направляется по адресу электронной
-								почты, указанному в разделе 10 Договора, или{" "}
-								<a href="mailto:hello@dsarchitect.ru">
-									hello@dsarchitect.ru
-								</a>{" "}
-								,{" "}
+								почты, указанному в разделе 10 Договора, или ,{" "}
 								<a href="mailto:artur.dsgn@yandex.ru">
 									artur.dsgn@yandex.ru
 								</a>
@@ -565,11 +561,7 @@ export default function Page() {
 								документы в виде хорошо читаемых скан- или
 								фотокопий, направленных Сторонами исключительно
 								с электронных адресов: Исполнителя – с адреса
-								электронной почты{" "}
-								<a href="mailto:hello@dsarchitect.ru">
-									hello@dsarchitect.ru
-								</a>{" "}
-								,{" "}
+								электронной почты ,{" "}
 								<a href="mailto:artur.dsgn@yandex.ru">
 									artur.dsgn@yandex.ru
 								</a>{" "}
@@ -656,11 +648,7 @@ export default function Page() {
 								д 7/1, квартира 1090{" "}
 							</p>
 							<p>
-								Email:{" "}
-								<a href="mailto:hello@dsarchitect.ru">
-									hello@dsarchitect.ru
-								</a>{" "}
-								,{" "}
+								Email: ,{" "}
 								<a href="mailto:artur.dsgn@yandex.ru">
 									artur.dsgn@yandex.ru
 								</a>{" "}

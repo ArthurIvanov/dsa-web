@@ -6,24 +6,53 @@ interface ICardClient {
 	name?: string;
 	role?: string;
 	content?: string;
+	company?: string;
 }
 
 const StyledCardClient = styled.div<ICardClient>`
-	padding: 117px 64px 64px 64px;
-	position: relate;
+	background-color: var(--main-invert-default);
+	img {
+		width: 120px;
+	}
+	.client-card-header {
+		display: flex;
+		align-items: center;
+		background-color: var(--main-invert-hover);
+	}
+	.client-card-header-content {
+		min-height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		padding: 12px;
+	}
+
+	.client-card-body {
+		padding: 24px;
+	}
 `;
 
-export const CardClient = ({ img, name, role, content }: ICardClient) => {
+export const CardClient = ({
+	img,
+	name,
+	role,
+	content,
+	company,
+}: ICardClient) => {
 	return (
 		<StyledCardClient>
-			<div className="card-header-absolute">
+			<div className="client-card-header">
 				<img alt="user" src={img} />
-				<div>
-					<h4>{name}</h4>
+				<div className="client-card-header-content">
+					<h5>{name}</h5>
 					<span>{role}</span>
+					<span>{company}</span>
 				</div>
 			</div>
-			<p>{content}</p>
+			<div className="client-card-body">
+				<p>{content}</p>
+			</div>
 		</StyledCardClient>
 	);
 };

@@ -14,7 +14,9 @@ export const HeroSection = () => {
 						</div>
 						<div className="display-flex gap-8 flex-justify-center">
 							<Calendar size={24} />
-							<span className="text-large">04 сентября 2024</span>
+							<span className="text-large">
+								04 сентябряnpm 2024
+							</span>
 						</div>
 						<div className="display-flex gap-8 flex-justify-center">
 							<Clock size={24} />
@@ -25,8 +27,9 @@ export const HeroSection = () => {
 					</div>
 					<p className="text-hero ">
 						Уникальный курс не имеющий аналогов во всём мире который
-						вобрал в себя весь огромный, практический опыт работы с
-						дизайн системами от истоков образования до наших дней
+						вобрал в себя весь огромный, практический опыт работы{" "}
+						<br />с дизайн-системами от истоков образования до наших
+						дней
 					</p>
 				</div>
 				<div>

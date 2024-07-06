@@ -4,6 +4,7 @@ import { Section } from "./components/section.component";
 import { FaqSection } from "./sections/faq.section";
 import { HeroSection } from "./sections/hero.section";
 import { ReadySection } from "./sections/ready.section";
+import { Testimonials } from "./sections/testimonials";
 import { WhatLearnSection } from "./sections/what-learn.section";
 
 const List = () => {
@@ -85,6 +86,8 @@ export default function Home() {
 					и смежных областях
 				</p>
 			</Section>
+
+			<Testimonials />
 
 			<FaqSection />
 			<ReadySection />

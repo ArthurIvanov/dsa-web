@@ -18,7 +18,8 @@ const StyledAccordion = styled.div`
 		cursor: pointer;
 		display: flex;
 		width: 100%;
-		flex-diresction: row;
+		flex-direction: row;
+		align-items: center;
 		justify-content: space-between;
 	}
 

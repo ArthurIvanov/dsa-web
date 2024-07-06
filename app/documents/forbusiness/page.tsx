@@ -514,10 +514,6 @@ export default function Page() {
 								Исполнителю заявления об отчислении. Заявление
 								об отчислении направляется по адресу электронной
 								почты, указанному в разделе 10 Договора, или{" "}
-								<a href="mailto:hello@dsarchitect.ru">
-									hello@dsarchitect.ru
-								</a>{" "}
-								,{" "}
 								<a href="mailto:artur.dsgn@yandex.ru">
 									artur.dsgn@yandex.ru
 								</a>
@@ -598,10 +594,6 @@ export default function Page() {
 								фотокопий, направленных Сторонами исключительно
 								с электронных адресов: Исполнителя – с адреса
 								электронной почты{" "}
-								<a href="mailto:hello@dsarchitect.ru">
-									hello@dsarchitect.ru
-								</a>{" "}
-								,{" "}
 								<a href="mailto:artur.dsgn@yandex.ru">
 									artur.dsgn@yandex.ru
 								</a>{" "}
@@ -690,10 +682,6 @@ export default function Page() {
 							</p>
 							<p>
 								Email:{" "}
-								<a href="mailto:hello@dsarchitect.ru">
-									hello@dsarchitect.ru
-								</a>{" "}
-								,{" "}
 								<a href="mailto:artur.dsgn@yandex.ru">
 									artur.dsgn@yandex.ru
 								</a>{" "}

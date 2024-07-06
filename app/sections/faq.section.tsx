@@ -20,7 +20,8 @@ const accordionData = [
 
 export const FaqSection = () => {
 	return (
-		<section className="container display-flex flex-column gap-32">
+		<section className="container display-flex flex-column gap-32 flex-align-center">
+			<h2>Часто задаваемые вопросы</h2>
 			{accordionData.map(({ title, content }) => (
 				<Accordion title={title} content={content} key={title} />
 			))}
