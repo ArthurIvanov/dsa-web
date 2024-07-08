@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Cell } from "../components/cell.component";
+import { Cell } from "../components/cell/cell";
 
 export const WhatLearnSection = () => {
 	return (

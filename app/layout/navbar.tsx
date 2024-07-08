@@ -2,34 +2,36 @@ import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS } from "@/constants";
 import "./navbar.css";
+import { NavLink } from "../components/link/link";
 
 const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<div className="container flex-justify-between flex-align-center">
-				<div className="display-flex flex-align-center gap-16">
-					<Link href="/">
-						<Image
-							alt="logo"
-							src="/dsa-logo.svg"
-							width={100}
-							height={56}
-						/>
-					</Link>
+				<Link
+					href="/"
+					className="display-flex flex-align-center gap-16"
+				>
+					<Image
+						alt="logo"
+						src="/dsa-logo.svg"
+						width={100}
+						height={56}
+					/>
 					<span>Design System Architect</span>
-				</div>
+				</Link>
+
 				<ul className="display-flex flex-align-center gap-64">
 					<ul className="display-flex gap-32">
 						{NAV_LINKS.map((link) => (
-							<Link
+							<NavLink
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-link"
 								href={link.href}
 								key={link.key}
 							>
 								{link.label}
-							</Link>
+							</NavLink>
 						))}
 					</ul>
 					<a

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Image } from "../components/img.component";
+import { Image } from "../components/img/img";
 
 export function FormatSection() {
 	return (

@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["app/layout"],{
+self["webpackHotUpdate_N_E"]("app/layout",{
 
 /***/ "(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Fcomponents%2Flink%2Flink.tsx&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Flayout%2Ffooter.tsx&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Flayout%2Fnavbar.css&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Ftheme%2Fglobals.tsx&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fimage-component.js&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Flink.js&server=false!":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -606,11 +606,4 @@ eval(__webpack_require__.ts("\n\nif (false) {} else {\n  module.exports = __webp
 
 /***/ })
 
-},
-/******/ function(__webpack_require__) { // webpackRuntimeModules
-/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["main-app"], function() { return __webpack_exec__("(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Fcomponents%2Flink%2Flink.tsx&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Flayout%2Ffooter.tsx&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Flayout%2Fnavbar.css&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fapp%2Ftheme%2Fglobals.tsx&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fimage-component.js&modules=%2FUsers%2FIvanov_Art%2FDocuments%2Fdsa%2Fgit%2Fdsa-web%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Flink.js&server=false!"); });
-/******/ var __webpack_exports__ = __webpack_require__.O();
-/******/ _N_E = __webpack_exports__;
-/******/ }
-]);
+});

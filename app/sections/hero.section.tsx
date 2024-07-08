@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar, Clock, Video } from "react-feather";
+import { Detail } from "../components/detail/detail";
 
 export const HeroSection = () => {
 	return (
@@ -8,24 +9,18 @@ export const HeroSection = () => {
 				<div className="display-flex flex-column gap-32">
 					<h1>Архитектор Дизайн Систем</h1>
 					<div className="display-flex gap-32">
-						<div className="display-flex gap-8 flex-justify-center">
-							<Video size={24} />
-							<span className="text-large">Онлайн уроки</span>
-						</div>
-						<div className="display-flex gap-8 flex-justify-center">
-							<Calendar size={24} />
-							<span className="text-large">
-								04 сентябряnpm 2024
-							</span>
-						</div>
-						<div className="display-flex gap-8 flex-justify-center">
-							<Clock size={24} />
-							<span className="text-large">
-								2.5 - 3 часа живых занятий в неделю
-							</span>
-						</div>
+						<Detail>
+							<Video size={24} /> Онлайн уроки
+						</Detail>
+						<Detail>
+							<Calendar size={24} /> 04 сентября 2024
+						</Detail>
+						<Detail>
+							<Clock size={24} /> 2.5 - 3 часа живых занятий в
+							неделю
+						</Detail>
 					</div>
-					<p className="text-hero ">
+					<p className="text-hero">
 						Уникальный курс не имеющий аналогов во всём мире который
 						вобрал в себя весь огромный, практический опыт работы{" "}
 						<br />с дизайн-системами от истоков образования до наших

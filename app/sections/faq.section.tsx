@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion } from "../components/accordion.component";
+import { Accordion } from "../components/accodrion/accordion";
 
 const accordionData = [
 	{

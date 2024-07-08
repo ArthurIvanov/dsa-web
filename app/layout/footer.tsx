@@ -26,7 +26,7 @@ const StyledFooter = styled.footer`
 
 	.footer-signature {
 		padding: 16px;
-		border-top: 1px solid var(--tertiary-default);
+		border-top: 1px solid var(--border-clean-invert);
 		text-align: center;
 		font-size: 14px;
 		line-height: 24px;
@@ -38,7 +38,7 @@ const Footer = ({ children }: any) => {
 		<StyledFooter>
 			<div className="footer-content">
 				<ul>
-					<li className="text-secondary">Контакты</li>
+					<li className="text-base  color-tertiary">Контакты</li>
 					<li>
 						<a
 							target="_blank"
@@ -46,7 +46,7 @@ const Footer = ({ children }: any) => {
 							className="link-inverted"
 							href="mailto:artur.dsgn@yandex.ru"
 						>
-							hello@dsarchitect.ru
+							artur.dsgn@yandex.ru
 						</a>
 					</li>
 					<li>
@@ -62,7 +62,7 @@ const Footer = ({ children }: any) => {
 				</ul>
 
 				<ul>
-					<li className="text-secondary">Курсы</li>
+					<li className="text-base  color-tertiary">Курсы</li>
 					<li>
 						<a href="#hero-section" className="link-inverted">
 							Архитектор Дизайн Систем
@@ -73,15 +73,15 @@ const Footer = ({ children }: any) => {
 							className="link-inverted"
 							target="_blank"
 							rel="noopener noreferrer"
-							href="https://rutube.ru/channel/24000387/"
+							href="https://rutube.ru/plst/353013/"
 						>
-							Открытые материалы
+							Беспплатные материалы
 						</a>
 					</li>
 				</ul>
 
 				<ul>
-					<li className="text-secondary">Документы</li>
+					<li className="text-base  color-tertiary">Документы</li>
 					<li>
 						<Link
 							className="link-inverted"

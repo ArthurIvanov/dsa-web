@@ -1,4 +1,4 @@
-import { CardClient } from "../components/card-client.component";
+import { CardClient } from "../components/tesimonials/card";
 
 export const Testimonials = () => {
 	return (
@@ -7,20 +7,23 @@ export const Testimonials = () => {
 			<div className="display-flex space-between gap-24">
 				<CardClient
 					img="/client-1.png"
-					name="Ирина"
+					name="Полина"
 					role="Дизайнер"
+					company="Yandex"
 					content="The best thing I’ve done for myself lately! They gave me super-wide knowledge, honest feedback and lectures from some fascinating professionals in the industry, and a set of very practical skills. A more fabulous bootcamp you’ll never find."
 				/>
 				<CardClient
-					img="/client-1.png"
-					name="Ирина"
+					img="/client-2.png"
+					name="Анна"
 					role="Дизайнер"
+					company="Yandex"
 					content="The best thing I’ve done for myself lately! They gave me super-wide knowledge, honest feedback and lectures from some fascinating professionals in the industry, and a set of very practical skills. A more fabulous bootcamp you’ll never find."
 				/>
 				<CardClient
-					img="/client-1.png"
-					name="Ирина"
+					img="/client-3.png"
+					name="Елена"
 					role="Дизайнер"
+					company="Yandex"
 					content="The best thing I’ve done for myself lately! They gave me super-wide knowledge, honest feedback and lectures from some fascinating professionals in the industry, and a set of very practical skills. A more fabulous bootcamp you’ll never find."
 				/>
 			</div>
