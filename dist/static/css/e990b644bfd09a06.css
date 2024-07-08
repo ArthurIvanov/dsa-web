@@ -1,0 +1,1 @@
+.navbar{display:flex;height:120px;justify-content:center;align-items:center;padding:0 64px;background-color:var(--main-invert-default);box-shadow:0 8px 32px rgba(34,49,69,.04);z-index:120;position:-webkit-sticky;position:sticky}.navbar span{color:var(--tertiary-default);font-size:14px;line-height:16px}
