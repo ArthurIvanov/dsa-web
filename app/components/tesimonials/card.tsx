@@ -1,7 +1,7 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import styled from "styled-components";
 
-interface ICardClient {
+interface ICardClient extends HTMLAttributes<HTMLDivElement> {
 	img?: string;
 	name?: string;
 	role?: string;
@@ -11,6 +11,9 @@ interface ICardClient {
 
 const StyledCardClient = styled.div<ICardClient>`
 	background-color: var(--main-invert-default);
+	display: flex;
+	width: 100%;
+	flex-direction: column;
 	img {
 		width: 120px;
 	}

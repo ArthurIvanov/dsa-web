@@ -31,7 +31,7 @@ export const WhatLearnSection = () => {
 						<Cell>Архитектура библиотек</Cell>
 						<Cell>Коммуникация с разработкой</Cell>
 						<Cell>Что такое ДС для продуктовых команд</Cell>
-						<Cell borderColor={false}>Метрики Дизайн Системы</Cell>
+						<Cell borderColor={false}>Метрики Дизайн-системы</Cell>
 					</div>
 				</div>
 			</div>

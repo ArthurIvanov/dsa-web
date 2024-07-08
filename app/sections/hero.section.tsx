@@ -7,13 +7,13 @@ export const HeroSection = () => {
 		<section id="hero-section" className="container">
 			<div className="display-flex flex-column gap-64 hero-section-bg section-shadow">
 				<div className="display-flex flex-column gap-32">
-					<h1>Архитектор Дизайн Систем</h1>
+					<h1>Архитектор Дизайн-систем</h1>
 					<div className="display-flex gap-32">
 						<Detail>
 							<Video size={24} /> Онлайн уроки
 						</Detail>
 						<Detail>
-							<Calendar size={24} /> 04 сентября 2024
+							<Calendar size={24} /> 07 сентября 2024
 						</Detail>
 						<Detail>
 							<Clock size={24} /> 2.5 - 3 часа живых занятий в

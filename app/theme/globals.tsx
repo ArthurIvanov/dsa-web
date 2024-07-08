@@ -329,6 +329,10 @@ img {
     display: flex;
 }
 
+flex-grow {
+    flex-grow: 1;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -347,6 +351,25 @@ img {
 
 .flex-align-center {
     align-items: center;
+}
+
+.justify-stretch {
+    justinfy-content: sretch;
+
+}
+
+.align-stretch {
+    align-items: sretch;
+
+}
+
+.display-grid {
+    display-grid;
+}
+
+.3-columns {
+    grid-template-columns: repeat(3, 1fr);
+
 }
 
 

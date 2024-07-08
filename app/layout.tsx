@@ -5,6 +5,12 @@ import Footer from "@/app/layout/footer";
 import { Globals } from "./theme/globals";
 
 export const metadata: Metadata = {
+	icons: [
+		{
+			rel: "icon",
+			url: "/favicon.ico",
+		},
+	],
 	title: "Design System Architect",
 	description:
 		"Уникальный курс по Архитектуре Дизайн Систем для средних и крупных организаций",
