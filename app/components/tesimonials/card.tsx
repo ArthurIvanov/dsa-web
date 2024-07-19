@@ -33,6 +33,7 @@ const StyledCardClient = styled.div<ICardClient>`
 
 	.client-card-body {
 		padding: 24px;
+		color: var(--tertiary-default);
 	}
 `;
 
