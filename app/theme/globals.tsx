@@ -81,7 +81,7 @@ export const Globals = createGlobalStyle`
 
 h1 {
     font-size: 80px;
-    line-height: 96px;
+    line-height: 92px;
     font-weight: 600;
     display: inline-block;
 }
@@ -143,6 +143,9 @@ body {
   background: var(--global-bg);
 }
 
+.max-width {
+    max-width: 1622px;
+}
 
 .grid {
     display: grid;

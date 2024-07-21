@@ -15,6 +15,9 @@ const StyledFooter = styled.footer`
 		padding: 64px;
 		display: flex;
 		gap: 32px;
+		max-width: 1622px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	ul {

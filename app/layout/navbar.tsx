@@ -1,13 +1,39 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS } from "@/constants";
-import "./navbar.css";
 import { NavLink } from "../components/link/link";
+import styled from "styled-components";
+
+const StyledNavBar = styled.nav`
+	display: flex;
+	height: 120px;
+	padding: 0 64px;
+	background-color: var(--main-invert-default);
+	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
+	z-index: 120;
+	position: sticky;
+
+	.navbar-content {
+		max-width: 1622px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	span {
+		color: var(--tertiary-default);
+		font-size: 14px;
+		line-height: 16px;
+	}
+`;
 
 const Navbar = () => {
 	return (
-		<nav className="navbar">
-			<div className="container flex-justify-between flex-align-center">
+		<StyledNavBar>
+			<div className="navbar-content">
 				<Link
 					href="/"
 					className="display-flex flex-align-center gap-16"
@@ -44,7 +70,7 @@ const Navbar = () => {
 					</a>
 				</ul>
 			</div>
-		</nav>
+		</StyledNavBar>
 	);
 };
 
