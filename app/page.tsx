@@ -60,7 +60,7 @@ export default function Home() {
 						Много практики
 					</span>
 					<span className="text-strong text-large color-secondary">
-						Небольшие группы на потоке (до 10 человек)
+						Небольшие группы на потоке (10-15 человек)
 					</span>
 				</Box>
 			</Section>

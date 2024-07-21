@@ -65,7 +65,7 @@ const Footer = ({ children }: any) => {
 					<li className="text-base  color-tertiary">Курсы</li>
 					<li>
 						<a href="#hero-section" className="link-inverted">
-							Архитектор Дизайн Систем
+							Архитектор Дизайн-систем
 						</a>
 					</li>
 					<li>
@@ -75,7 +75,7 @@ const Footer = ({ children }: any) => {
 							rel="noopener noreferrer"
 							href="https://rutube.ru/plst/353013/"
 						>
-							Беспплатные материалы
+							Бесплатные материалы
 						</a>
 					</li>
 				</ul>
