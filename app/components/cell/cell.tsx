@@ -15,6 +15,7 @@ const StyledCell = styled.div<ICell>`
 	border-bottom: 1px solid transparent;
 	display: flex;
 	min-width: 100%;
+	max-width: 100%;
 	width: 100%;
 
 	${(props) =>

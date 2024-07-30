@@ -28,6 +28,17 @@ const StyledAccordion = styled.div`
 		line-height: 24px;
 		color: var(--tertiary-default);
 	}
+	@media screen and (max-width: 1024px) {
+		h4 {
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		.accordion-content {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
 `;
 
 export const Accordion = ({ title, content }: any) => {

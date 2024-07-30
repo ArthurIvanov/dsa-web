@@ -23,7 +23,7 @@ const StyledSection = styled.section<ISection>`
 	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
 	height: 650px;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		height: auto;
 		.section-image {
 			display: none;

@@ -121,6 +121,33 @@ h6 {
     display: inline-block;
 }
 
+
+
+@media screen and (max-width: 1024px) {
+    h1 {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 56px;
+
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -193,6 +220,14 @@ p {
     line-height: 32px;
     font-weight: 500;
     color: var(--tertiary-default);
+}
+
+@media screen and (max-width: 1024px) {
+.text-hero {
+font-size: 18px;
+    line-height: 24px;
+}
+
 }
 
 
@@ -271,8 +306,12 @@ p {
     align-items: center;
     padding: 64px;
     gap: 64px;
+
+
     
 }
+
+
 
 
 .hero-section-bg {
@@ -284,6 +323,15 @@ p {
     width: 100%;
     padding: 64px;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .main {
+         gap: 32px;
+         padding: 32px;
+    }
+
 }
 
 .w-100 {

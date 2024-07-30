@@ -1,10 +1,28 @@
+import styled from "styled-components";
 import { CardClient } from "../components/tesimonials/card";
+
+const StyledTestimonials = styled.section`
+	h2 {
+		text-align: center;
+	}
+
+	.clients-list {
+		display: flex;
+		gap: 24px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.clients-list {
+			flex-direction: column;
+		}
+	}
+`;
 
 export const Testimonials = () => {
 	return (
-		<div className="display-flex flex-column gap-24 flex-align-center">
-			<h2>Выпускники говорят сами за себя</h2>
-			<div className="display-flex gap-24">
+		<StyledTestimonials className="display-flex flex-column gap-24 flex-align-center">
+			<h2 className="centered">Выпускники говорят сами за себя</h2>
+			<div className="lients-list">
 				<CardClient
 					className="flex-grow"
 					img="/client-1.png"
@@ -34,6 +52,6 @@ export const Testimonials = () => {
                     Материал был представлен доступно, порадовало, что можно задавать вопросы как по лекциям, так и по моментам, возникающим в работе. Спасибо за дополнительные материалы, которые ты для нас готовил)`}
 				/>
 			</div>
-		</div>
+		</StyledTestimonials>
 	);
 };

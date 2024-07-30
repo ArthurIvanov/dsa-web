@@ -1,14 +1,37 @@
 "use client";
 import React from "react";
 import { Cell } from "../components/cell/cell";
+import styled from "styled-components";
+
+const StyledWhatLearnSection = styled.section`
+	h2 {
+		display: flex;
+	}
+	.adaptive-content {
+		flex-direction: row;
+		align-items: stretch;
+	}
+	.items-col {
+		flex-direction: column;
+		display: flex;
+		align-items: stretch;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.adaptive-content {
+			flex-direction: column;
+			align-items: stretch;
+		}
+	}
+`;
 
 export const WhatLearnSection = () => {
 	return (
-		<section className="container">
-			<div className="flex-align-center gap-32 p-32 display-flex flex-column background-gl section-shadow w-100">
-				<h2>Что ты изучишь</h2>
-				<div className="display-flex flex-row gap-24  flex-justify-stretch">
-					<div className="display-flex flex-column">
+		<StyledWhatLearnSection className="container">
+			<div className="flex-align-center gap-32 p-32 flex-justify-stretch display-flex flex-column background-gl section-shadow w-100">
+				<h2 className="display-flex">Что ты изучишь</h2>
+				<div className="display-flex adaptive-content gap-24  ">
+					<div className="items-col">
 						<Cell bold={true}>Дизайн</Cell>
 						<Cell>Цвета. Палитры, темы, токены</Cell>
 						<Cell>Типографика. Адаптивность, нейминг</Cell>
@@ -17,7 +40,7 @@ export const WhatLearnSection = () => {
 							Компоненты. Архитектура, документация
 						</Cell>
 					</div>
-					<div className="display-flex flex-column">
+					<div className="items-col">
 						<Cell bold>Разработка</Cell>
 						<Cell>Основы Git, Github</Cell>
 						<Cell>База HTML, CSS, JS, TS, React</Cell>
@@ -26,7 +49,7 @@ export const WhatLearnSection = () => {
 							Storybook и публикация проекта
 						</Cell>
 					</div>
-					<div className="display-flex flex-column">
+					<div className="items-col">
 						<Cell bold>Управление и Евангелирование</Cell>
 						<Cell>Архитектура библиотек</Cell>
 						<Cell>Коммуникация с разработкой</Cell>
@@ -35,6 +58,6 @@ export const WhatLearnSection = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</StyledWhatLearnSection>
 	);
 };
