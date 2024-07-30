@@ -306,30 +306,19 @@ font-size: 18px;
     align-items: center;
     padding: 64px;
     gap: 64px;
-
-
     
 }
 
 
 
 
-.hero-section-bg {
-    background: url("/heroHouse.png");
-    background-size: auto; 
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 650px;
-    width: 100%;
-    padding: 64px;
-    justify-content: center;
-}
+
 
 
 @media screen and (max-width: 1024px) {
     .main {
-         gap: 32px;
-         padding: 32px;
+         gap: 16px;
+         padding: 16px;
     }
 
 }

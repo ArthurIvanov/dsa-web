@@ -28,6 +28,10 @@ const StyledNavBar = styled.nav`
 		font-size: 14px;
 		line-height: 16px;
 	}
+
+	@media screen and (max-width: 1024px) {
+		padding: 0 16px;
+	}
 `;
 
 const Navbar = () => {
@@ -44,7 +48,6 @@ const Navbar = () => {
 						width={100}
 						height={56}
 					/>
-					<span>Design System Architect</span>
 				</Link>
 
 				<ul className="display-flex flex-align-center gap-64">

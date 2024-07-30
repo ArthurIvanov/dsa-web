@@ -22,9 +22,20 @@ const StyledSection = styled.section<ISection>`
 	background-color: var(--main-invert-default);
 	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
 	height: 650px;
+	pading: 64px;
+
+	.section-content {
+		padding: 64px;
+		gap: 32px;
+	}
 
 	@media (max-width: 1024px) {
 		height: auto;
+		text-align: center;
+		.section-content {
+			padding: 16px;
+			gap: 16px;
+		}
 		.section-image {
 			display: none;
 		}
@@ -57,7 +68,12 @@ export const Section = ({
 				path={imagePath}
 			/>
 
-			<Box distance={32} direction="column" padding={64} justifyCentered>
+			<Box
+				distance={32}
+				direction="column"
+				justifyCentered
+				className="section-content"
+			>
 				<h2>{heading}</h2>
 				{children}
 				<div>

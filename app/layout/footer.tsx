@@ -34,6 +34,18 @@ const StyledFooter = styled.footer`
 		font-size: 14px;
 		line-height: 24px;
 	}
+
+	@media screen and (max-width: 1024px) {
+		ul {
+			width: 400px;
+		}
+		.footer-content {
+			flex-direction: column;
+			align-items: center;
+			justify-content: stretch;
+			padding: 32px;
+		}
+	}
 `;
 
 const Footer = ({ children }: any) => {
