@@ -29,6 +29,55 @@ const StyledNavBar = styled.nav`
 		line-height: 16px;
 	}
 
+	.hamburger-lines {
+		display: block;
+		height: 26px;
+		width: 32px;
+		position: absolute;
+		top: 48px;
+		right: 20px;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.hamburger-lines .line {
+		display: block;
+		height: 4px;
+		width: 100%;
+		border-radius: 10px;
+		background: var(--main-default);
+	}
+
+	.hamburger-lines .line1 {
+		transform-origin: 0% 0%;
+		transition: transform 0.4s ease-in-out;
+	}
+
+	.hamburger-lines .line2 {
+		transition: transform 0.2s ease-in-out;
+	}
+
+	.hamburger-lines .line3 {
+		transform-origin: 0% 100%;
+		transition: transform 0.4s ease-in-out;
+	}
+
+	.navbar .menu-items {
+		padding-top: 120px;
+		box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+		height: 100vh;
+		width: 100%;
+		transform: translate(-150%);
+		display: flex;
+		flex-direction: column;
+		margin-left: -40px;
+		padding-left: 50px;
+		transition: transform 0.5s ease-in-out;
+		text-align: center;
+	}
+
 	@media screen and (max-width: 1024px) {
 		padding: 0 16px;
 	}
@@ -50,7 +99,7 @@ const Navbar = () => {
 					/>
 				</Link>
 
-				<ul className="display-flex flex-align-center gap-64">
+				<div className="display-flex flex-align-center gap-64">
 					<ul className="display-flex gap-32">
 						{NAV_LINKS.map((link) => (
 							<NavLink
@@ -71,7 +120,12 @@ const Navbar = () => {
 					>
 						Записаться на поток
 					</a>
-				</ul>
+				</div>
+				{/* <div className="hamburger-lines">
+					<span className="line line1"></span>
+					<span className="line line2"></span>
+					<span className="line line3"></span>
+				</div> */}
 			</div>
 		</StyledNavBar>
 	);

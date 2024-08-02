@@ -122,32 +122,6 @@ h6 {
 }
 
 
-
-@media screen and (max-width: 1024px) {
-    h1 {
-    font-size: 56px;
-    line-height: 64px;
-}
-
-h2 {
-    font-size: 48px;
-    line-height: 56px;
-
-}
-
-h3 {
-    font-size: 32px;
-    line-height: 40px;
-}
-
-h4 {
-    font-size: 28px;
-    line-height: 36px;
-}
-
-
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -466,6 +440,59 @@ flex-grow {
 .mb-32 {
     margin-bottom: 32px;
 }
+
+// MEDIA
+
+
+
+@media screen and (max-width: 1024px) {
+    h1 {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 56px;
+
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}
+
 
 
 `;

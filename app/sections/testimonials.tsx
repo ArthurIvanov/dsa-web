@@ -9,6 +9,7 @@ const StyledTestimonials = styled.section`
 	.clients-list {
 		display: flex;
 		gap: 24px;
+		flex-direction: row;
 	}
 
 	@media screen and (max-width: 1024px) {
@@ -22,7 +23,7 @@ export const Testimonials = () => {
 	return (
 		<StyledTestimonials className="display-flex flex-column gap-24 flex-align-center">
 			<h2 className="centered">Выпускники говорят сами за себя</h2>
-			<div className="lients-list">
+			<div className="clients-list">
 				<CardClient
 					className="flex-grow"
 					img="/client-1.png"
