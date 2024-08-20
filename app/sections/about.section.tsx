@@ -5,7 +5,7 @@ export const AboutSection = () => {
 		<section id="about-me" className="container">
 			<div id="about-me" className="about-bg" />
 			<div className="display-flex flex-row gap-32 card flex-align-center section-shadow">
-				<div className="display-flex flex-column gap-32 p-32 backgeound-gl">
+				<div className="display-flex flex-column gap-32 p-32 background-gl">
 					<h2>Давай знакомиться</h2>
 
 					<span>

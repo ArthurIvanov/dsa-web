@@ -121,11 +121,11 @@ const Navbar = () => {
 						Записаться на поток
 					</a>
 				</div>
-				{/* <div className="hamburger-lines">
+				<div className="hamburger-lines">
 					<span className="line line1"></span>
 					<span className="line line2"></span>
 					<span className="line line3"></span>
-				</div> */}
+				</div>
 			</div>
 		</StyledNavBar>
 	);

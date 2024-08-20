@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-
-import Navbar from "@/app/layout/navbar";
+import Navbar from "@/app/layout/navigation";
 import Footer from "@/app/layout/footer";
 import { Globals } from "./theme/globals";
 
