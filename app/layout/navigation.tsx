@@ -11,9 +11,6 @@ const StyledNavBar = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 1622px;
-	width: 100%;
-	margin: 0 auto;
 	height: 120px;
 	padding: 0 64px;
 	background-color: var(--main-invert-default);
@@ -21,7 +18,17 @@ const StyledNavBar = styled.nav`
 	z-index: 120;
 	position: fixed;
 	left: 50%;
+	width: 100%;
 	transform: translate(-50%);
+
+	.navbar-content {
+		max-width: 1622px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	.MenuItems {
 		list-style: none;
@@ -74,33 +81,43 @@ const Navbar = () => {
 	};
 	return (
 		<StyledNavBar>
-			<Link href="/" className="display-flex flex-align-center gap-16">
-				<Image alt="logo" src="/dsa-logo.svg" width={100} height={56} />
-			</Link>
+			<div className="navbar-content">
+				<Link
+					href="/"
+					className="display-flex flex-align-center gap-16"
+				>
+					<Image
+						alt="logo"
+						src="/dsa-logo.svg"
+						width={100}
+						height={56}
+					/>
+				</Link>
 
-			<div className="Hamburger-Cross-Icons" onClick={handleClick}>
-				{open ? <X size={24} /> : <Menu size={24} />}
+				<div className="Hamburger-Cross-Icons" onClick={handleClick}>
+					{open ? <X size={24} /> : <Menu size={24} />}
+				</div>
+				<ul
+					className={`display-flex gap-32 ${
+						open ? "MenuItems active" : "MenuItems"
+					}`}
+				>
+					{NavItems.map((Item, index) => {
+						return (
+							<li key={index}>
+								<NavLink
+									target="_blank"
+									rel="noopener noreferrer"
+									href={Item.url}
+									className={Item.cName}
+								>
+									{Item.title}
+								</NavLink>
+							</li>
+						);
+					})}
+				</ul>
 			</div>
-			<ul
-				className={`display-flex gap-32 ${
-					open ? "MenuItems active" : "MenuItems"
-				}`}
-			>
-				{NavItems.map((Item, index) => {
-					return (
-						<li key={index}>
-							<NavLink
-								target="_blank"
-								rel="noopener noreferrer"
-								href={Item.url}
-								className={Item.cName}
-							>
-								{Item.title}
-							</NavLink>
-						</li>
-					);
-				})}
-			</ul>
 		</StyledNavBar>
 	);
 };
