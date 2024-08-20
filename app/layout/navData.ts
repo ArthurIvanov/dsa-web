@@ -12,7 +12,7 @@ export const NavItems = [
 
 	{
 		title: "Записаться на поток",
-		url: "https://t.me/arturdsg",
+		url: "https://t.me/arturdsgn",
 		cName: "button-primary",
 	},
 ];
