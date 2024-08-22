@@ -59,7 +59,7 @@ export const CardClient = ({
 				</div>
 			</div>
 			<div className="client-card-body">
-				<p>{content}</p>
+				<p className="text-large">{content}</p>
 			</div>
 		</StyledCardClient>
 	);

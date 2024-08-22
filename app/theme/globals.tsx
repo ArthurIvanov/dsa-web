@@ -184,7 +184,7 @@ a:visited {
     color: inherit;
 }
 
-p {
+p, li {
     font-size: 18px;
     line-height: 24px;
 }
@@ -197,9 +197,13 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-.text-hero {
-font-size: 18px;
-    line-height: 24px;
+    .text-hero {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    p, a, li {
+        font-size: 14px;
+        line-height: 20px;
 }
 
 }
@@ -422,6 +426,10 @@ flex-grow {
 
 .p-64 {
     padding: 64px;
+}
+
+.mt-48 {
+    margin-top: 80px;
 }
 
 
