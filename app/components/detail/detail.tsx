@@ -8,4 +8,9 @@ export const Detail = styled.span`
 	align-items: center;
 	gap: 8px;
 	color: var(--secondary-default);
+
+	@media screen and (max-width: 560px) {
+		font-size: 14px;
+		line-height: 20px;
+	}
 `;

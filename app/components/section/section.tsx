@@ -41,6 +41,14 @@ const StyledSection = styled.section<ISection>`
 		}
 	}
 
+	@media screen and (max-width: 560px) {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
 	${(props) =>
 		props.invert &&
 		`
@@ -78,6 +86,7 @@ export const Section = ({
 				{children}
 				<div>
 					<Link
+						type="button"
 						className="button-primary"
 						href={src}
 						target="_blank"

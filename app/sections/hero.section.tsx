@@ -29,9 +29,15 @@ const StyledHeroSection = styled.section<HTMLAttributes<HTMLDivElement>>`
 		gap: 24px;
 	}
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 560px) {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
 		.hero-section-bg {
-			padding: 32px;
+			padding: 16px;
 			gap: 16px;
 			min-height: 320px;
 		}
@@ -54,7 +60,7 @@ export const HeroSection = () => {
 							<Video size={24} /> Онлайн уроки
 						</Detail>
 						<Detail>
-							<Calendar size={24} /> 07 сентября 2024
+							<Calendar size={24} /> 11 января 2025
 						</Detail>
 						<Detail>
 							<Clock size={24} /> 2.5 - 3 часа живых занятий в
@@ -69,6 +75,7 @@ export const HeroSection = () => {
 				</div>
 				<div>
 					<a
+						type="button"
 						target="_blank"
 						rel="noopener noreferrer"
 						href="https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1"

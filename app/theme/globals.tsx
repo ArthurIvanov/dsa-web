@@ -30,6 +30,11 @@ export const Globals = createGlobalStyle`
 
     /* TYPOGRAPHY */
     font-family: Inter, sans-serif;
+
+    .gap-section {
+        gap: 64;
+    
+    }
     
 }
 
@@ -207,6 +212,18 @@ p, li {
 }
 
 }
+@media screen and (max-width: 560px) {
+    .text-hero {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    p, a, li {
+        font-size: 14px;
+        line-height: 20px;
+}
+
+}
 
 
 .text-secondary {
@@ -275,22 +292,19 @@ p, li {
 
 
 .main {
+		
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 64px;
-    gap: 64px;
+    gap: 24px;
     
 }
-
-
-
-
-
 
 
 @media screen and (max-width: 1024px) {
@@ -300,6 +314,24 @@ p, li {
     }
 
 }
+
+@media screen and (min-width: 560px) {
+    .main {
+         gap: 128px;
+         padding: 16px;
+         
+    }
+
+}
+
+@media screen and (min-width: 100px) {
+    .main {
+         gap: 16px;
+        
+    }
+
+}
+
 
 .w-100 {
     max-width: 100%;
@@ -480,8 +512,8 @@ h4 {
 
 @media screen and (max-width: 560px) {
     h1 {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 40px;
     }
 
     h2 {
