@@ -302,32 +302,23 @@ p, li {
     justify-content: space-between;
     align-items: center;
     padding: 64px;
-    gap: 24px;
+    gap: 64px;
     
 }
 
 
 @media screen and (max-width: 1024px) {
     .main {
-         gap: 16px;
+         gap: 24px;
          padding: 16px;
     }
 
 }
 
-@media screen and (min-width: 560px) {
-    .main {
-         gap: 128px;
-         padding: 16px;
-         
-    }
 
-}
-
-@media screen and (min-width: 100px) {
+@media screen and (max-width: 560px) {
     .main {
-         gap: 16px;
-        
+         gap: 16px;    
     }
 
 }
