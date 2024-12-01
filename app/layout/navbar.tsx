@@ -104,7 +104,9 @@ const Navbar = () => {
 						{NAV_LINKS.map((link) => (
 							<NavLink
 								target="_blank"
-								rel="noopener noreferrer"
+								rel={
+									link.ref ? "noopener noreferrer" : undefined
+								}
 								href={link.href}
 								key={link.key}
 							>

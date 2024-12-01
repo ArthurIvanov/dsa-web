@@ -23,7 +23,7 @@ const accordionData = [
 
 	{
 		title: "Что я получу по итогу?",
-		content: `Вы будете уверенно ориентироваться в методах проведения исследований и проводить их самостоятельно, не боясь, что вас сочтут профаном. Вы будете знать нюансы, которые не знают даже опытные исследователи. Вы получаете не только знания, но и правильный майндсет`,
+		content: `Вы будете знать нюансы, которые не знают даже опытные специалисты. Вы получите не только знания методологий, но и исследовательский майндсет`,
 	},
 ];
 
@@ -36,6 +36,7 @@ export default function Home() {
 				heroImg="/AUXheroSection.png"
 				date="Февраль 2025"
 				linkToProgram={linkToFigmaPresentation}
+				timing="1.5 - 2"
 			/>
 			<Section
 				src={"https://t.me/FRaklov"}
@@ -74,7 +75,7 @@ export default function Home() {
 						Общая длительность 12 недель
 					</span>
 					<span className="text-strong text-large color-secondary">
-						2.5 - 3 часа живых занятий в неделю
+						1.5 - 2 часа живых занятий в неделю
 					</span>
 					<span className="text-strong text-large color-secondary">
 						4+ часов дополнительных видео материалов
@@ -113,7 +114,7 @@ export default function Home() {
 				buttonText="Будем на связи!"
 			>
 				<p className="text-large">
-					Меня зову Фёдор. Я Sr. UX Researcher в Kaspersky.
+					Меня зовут Фёдор Раклов. Я Sr. UX Researcher в Kaspersky.
 					Специализируюсь на исследовании сложных продуктов
 					кибер-безопасности в сегменте B2B, также работаю по
 					продуктам входящим в Kaspersky OS. Работал в Ингосстрах.

@@ -106,8 +106,9 @@ const Navbar = () => {
 						return (
 							<li key={index}>
 								<NavLink
-									target="_blank"
-									rel="noopener noreferrer"
+									target={
+										Item.ref === true ? "_blank" : "_self"
+									}
 									href={Item.url}
 									className={Item.cName}
 								>

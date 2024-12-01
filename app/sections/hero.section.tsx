@@ -2,7 +2,6 @@ import React, { HTMLAttributes } from "react";
 import { Calendar, Clock, Video } from "react-feather";
 import { Detail } from "../components/detail/detail";
 import styled from "styled-components";
-import { title } from "process";
 
 interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	title?: string;
@@ -10,6 +9,7 @@ interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	description?: string;
 	linkToProgram?: string;
 	heroImg?: string;
+	timing?: string;
 }
 
 const StyledHeroSection = styled.section<IHeroSectionProps>`
@@ -64,6 +64,7 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 	description = "Уникальный курс не имеющий аналогов во всём мире который вобрал в себя весь огромный, практический опыт работы с дизайн-системами от истоков образования до наших дней",
 	linkToProgram = "https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1",
 	heroImg = "/heroHouse.png",
+	timing = "2.5 - 3",
 }) => {
 	return (
 		<StyledHeroSection heroImg={heroImg} id="hero-section">
@@ -78,7 +79,7 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 							<Calendar size={24} /> {date}
 						</Detail>
 						<Detail>
-							<Clock size={24} /> 2.5 - 3 часа живых занятий в
+							<Clock size={24} /> {timing} часа живых занятий в
 							неделю
 						</Detail>
 					</div>
