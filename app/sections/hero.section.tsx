@@ -2,8 +2,17 @@ import React, { HTMLAttributes } from "react";
 import { Calendar, Clock, Video } from "react-feather";
 import { Detail } from "../components/detail/detail";
 import styled from "styled-components";
+import { title } from "process";
 
-const StyledHeroSection = styled.section<HTMLAttributes<HTMLDivElement>>`
+interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
+	title?: string;
+	date?: string;
+	description?: string;
+	linkToProgram?: string;
+	heroImg?: string;
+}
+
+const StyledHeroSection = styled.section<IHeroSectionProps>`
 	width: 100%;
 	max-width: var(--max-width);
 	margin: 0 auto;
@@ -11,7 +20,7 @@ const StyledHeroSection = styled.section<HTMLAttributes<HTMLDivElement>>`
 	height: auto;
 
 	.hero-section-bg {
-		background: url("/heroHouse.png");
+		background: url(${(props) => props.heroImg});
 		background-size: auto;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -49,36 +58,38 @@ const StyledHeroSection = styled.section<HTMLAttributes<HTMLDivElement>>`
 	}
 `;
 
-export const HeroSection = () => {
+export const HeroSection: React.FC<IHeroSectionProps> = ({
+	title = "Архитектор Дизайн Систем",
+	date = "11 января 2025",
+	description = "Уникальный курс не имеющий аналогов во всём мире который вобрал в себя весь огромный, практический опыт работы с дизайн-системами от истоков образования до наших дней",
+	linkToProgram = "https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1",
+	heroImg = "/heroHouse.png",
+}) => {
 	return (
-		<StyledHeroSection id="hero-section">
+		<StyledHeroSection heroImg={heroImg} id="hero-section">
 			<div className="hero-section-bg section-shadow">
 				<div className="display-flex flex-column gap-32">
-					<h1>Архитектор Дизайн-систем</h1>
+					<h1>{title}</h1>
 					<div className="hero-section-list">
 						<Detail>
 							<Video size={24} /> Онлайн уроки
 						</Detail>
 						<Detail>
-							<Calendar size={24} /> 11 января 2025
+							<Calendar size={24} /> {date}
 						</Detail>
 						<Detail>
 							<Clock size={24} /> 2.5 - 3 часа живых занятий в
 							неделю
 						</Detail>
 					</div>
-					<p className="text-hero">
-						Уникальный курс не имеющий аналогов во всём мире который
-						вобрал в себя весь огромный, практический опыт работы с
-						дизайн-системами от истоков образования до наших дней
-					</p>
+					<p className="text-hero">{description}</p>
 				</div>
 				<div>
 					<a
 						type="button"
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1"
+						href={linkToProgram}
 						className="button-primary"
 					>
 						Подробнее

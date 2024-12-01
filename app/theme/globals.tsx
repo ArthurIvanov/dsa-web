@@ -9,24 +9,41 @@ export const Globals = createGlobalStyle`
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
+    --white: #FFFFFF;
+    --grey-50: #F0F1F4;
+    --grey-100: #E7E8EC;
+    --grey-200: #C6C8D2;
+    --grey-300: #A1A4B5;
+    --grey-400: #626883;
+    --grey-500: #4E5369;
+    --grey-600: #3F4354;
+    --grey-700: #313442;
+    --grey-800: #1B1D25;
+    --grey-900: #0F1014;
+
     /* COLORS */
-    --main-default: #1B1F25;
-    --main-hover: #313842;
-    --main-active: #0E1115;
-    --secondary-default: #313842;
-    --tertiary-default: #4F5A68;
-
-    --border-clean: #C5CCD3;
-    --border-clean-invert: #353D46;
-
-    --main-invert-default: #FAFAFA;
-    --main-invert-hover: #E6EAED;
-    --main-invert-active: #C5CCD3;
-
-    --secondary-invert: #A4AAB2;
+    --main-default: var(--grey-900);
+    --main-hover: var(--grey-800);
+    --main-active: var(--grey-700);
+    --main-invert-default: var(--grey-50);
+    --main-invert-hover: var(--grey-100);
+    --main-invert-active: var(--grey-200);
     
-    --global-bg: #F0F1F4;
-    --subsection-bg: #F6F7F9;
+    --secondary-default: var(--grey-600);
+    --secondary-invert: var(--grey-300);;
+    --tertiary-default: var(--grey-500);
+
+    --border-clean: var(--grey-200);
+    --border-clean-invert: var(--grey-600);
+
+    --main-invert-default: var(--grey-50);
+    --main-invert-hover: var(--grey-100);
+    --main-invert-active: var(--grey-200);
+
+    
+    --global-bg: var(--grey-50);
+    --subsection-bg: var(--grey-50);
+    --section-bg: var(--white);
 
     /* TYPOGRAPHY */
     font-family: Inter, sans-serif;
@@ -335,7 +352,7 @@ p, li {
 }
 
 .background-gl {
-    background-color: var(--main-invert-default);
+    background-color: var(--section-bg);
 }
 
 .cell {
@@ -523,7 +540,5 @@ h4 {
     }
 
 }
-
-
 
 `;

@@ -1,6 +1,13 @@
 import React from "react";
 import { Accordion } from "../components/accodrion/accordion";
 
+interface IAccordionData {
+	accordionData: {
+		title: string;
+		content: string;
+	}[];
+}
+
 const accordionData = [
 	{
 		title: "Почему именно этот курс?",
@@ -18,13 +25,14 @@ const accordionData = [
 	},
 ];
 
-export const FaqSection = () => {
+export const FaqSection: React.FC<IAccordionData> = ({ accordionData }) => {
 	return (
 		<section className="container display-flex flex-column gap-32 flex-align-center">
 			<h2 className="centered">Часто задаваемые вопросы</h2>
-			{accordionData.map(({ title, content }) => (
-				<Accordion title={title} content={content} key={title} />
-			))}
+			{accordionData &&
+				accordionData.map(({ title, content }) => (
+					<Accordion title={title} content={content} key={title} />
+				))}
 		</section>
 	);
 };

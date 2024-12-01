@@ -9,7 +9,7 @@ const StyledNavBar = styled.nav`
 	display: flex;
 	height: 120px;
 	padding: 0 64px;
-	background-color: var(--main-invert-default);
+	background-color: var(--section-bg);
 	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
 	z-index: 120;
 	position: sticky;

@@ -10,7 +10,7 @@ interface ICardClient extends HTMLAttributes<HTMLDivElement> {
 }
 
 const StyledCardClient = styled.div<ICardClient>`
-	background-color: var(--main-invert-default);
+	background-color: var(--section-bg);
 	display: flex;
 	width: 100%;
 	flex-direction: column;
@@ -20,7 +20,7 @@ const StyledCardClient = styled.div<ICardClient>`
 	.client-card-header {
 		display: flex;
 		align-items: center;
-		background-color: var(--main-invert-hover);
+		background-color: var(--section-bg);
 	}
 	.client-card-header-content {
 		min-height: 100%;

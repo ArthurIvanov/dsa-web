@@ -4,6 +4,7 @@ import { Cell } from "../components/cell/cell";
 import styled from "styled-components";
 
 const StyledWhatLearnSection = styled.section`
+	background-color: var(--section-bg);
 	h2 {
 		display: flex;
 	}
@@ -25,10 +26,42 @@ const StyledWhatLearnSection = styled.section`
 	}
 `;
 
+interface ILearnData {
+	learnData?: {
+		text: string;
+		bold: boolean;
+	}[];
+}
+
+const learnData = [
+	[
+		{ text: "Дизайн", bold: false },
+		{ text: "Дизайн", bold: false },
+		{ text: "Дизайн", bold: false },
+		{ text: "Дизайн", bold: false },
+		{ text: "Дизайн", bold: false },
+	],
+
+	[
+		{ text: "Разработка", bold: false },
+		{ text: "Основы Git, Github", bold: false },
+		{ text: "База HTML, CSS, JS, TS, React", bold: false },
+		{ text: "Создание библиотеки в коде", bold: false },
+		{ text: "Storybook и публикация проекта", bold: false },
+	],
+	[
+		{ text: "Управление и Евангелирование", bold: false },
+		{ text: "Архитектура библиотек", bold: false },
+		{ text: "Коммуникация с разработкой", bold: false },
+		{ text: "Что такое ДС для продуктовых команд", bold: false },
+		{ text: "Метрики Дизайн-системы", bold: false },
+	],
+];
+
 export const WhatLearnSection = () => {
 	return (
 		<StyledWhatLearnSection className="container">
-			<div className="flex-align-center gap-32 p-32 flex-justify-stretch display-flex flex-column background-gl section-shadow w-100">
+			<div className="flex-align-center gap-32 p-32 flex-justify-stretch display-flex flex-column section-shadow w-100">
 				<h2 className="display-flex">Что ты изучишь</h2>
 				<div className="display-flex adaptive-content gap-24  ">
 					<div className="items-col">

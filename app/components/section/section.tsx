@@ -19,7 +19,7 @@ const StyledSection = styled.section<ISection>`
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	background-color: var(--main-invert-default);
+	background-color: var(--section-bg);
 	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
 	height: 650px;
 	pading: 64px;
