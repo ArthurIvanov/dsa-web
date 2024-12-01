@@ -6,7 +6,7 @@ import { ChevronUp } from "react-feather";
 
 const StyledAccordion = styled.div`
 	color: var(--main-default);
-	background-color: var(--main-invert-default);
+	background-color: var(--section-bg);
 	padding: 32px;
 	display: flex;
 	flex-direction: column;

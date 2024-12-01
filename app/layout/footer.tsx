@@ -79,8 +79,13 @@ const Footer = ({ children }: any) => {
 				<ul>
 					<li className="text-base  color-tertiary">Курсы</li>
 					<li>
-						<a href="#hero-section" className="link-inverted">
+						<a href="/" className="link-inverted">
 							Архитектор Дизайн-систем
+						</a>
+					</li>
+					<li>
+						<a href="/advancedresearch" className="link-inverted">
+							Продвинутый ресёрч
 						</a>
 					</li>
 					<li>
@@ -115,9 +120,7 @@ const Footer = ({ children }: any) => {
 					</li>
 				</ul>
 			</div>
-			<div className="footer-signature">
-				2024 © Design System Architect
-			</div>
+			<div className="footer-signature">2025 © Sharped Skills</div>
 		</StyledFooter>
 	);
 };

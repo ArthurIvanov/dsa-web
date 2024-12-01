@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+interface IReadyProps {
+	title: string;
+}
+
 const StyledReadySection = styled.section`
 	@media screen and (max-width: 560px) {
 		a {
@@ -11,10 +15,10 @@ const StyledReadySection = styled.section`
 	}
 `;
 
-export const ReadySection = () => {
+export const ReadySection: React.FC<IReadyProps> = ({ title = "Готов?" }) => {
 	return (
 		<StyledReadySection className="container display-flex flex-column gap-32 flex-align-center text-center">
-			<h1>Готов прокачать свой уровень в Архитектуре Дизайн-систем?</h1>
+			<h1>{title}</h1>
 			<div>
 				<a
 					type="button"

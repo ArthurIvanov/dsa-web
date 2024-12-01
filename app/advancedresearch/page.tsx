@@ -1,0 +1,131 @@
+"use client";
+
+import { Box } from "../components/box/box";
+import { Section } from "../components/section/section";
+import { FaqSection } from "../sections/faq.section";
+import { HeroSection } from "../sections/hero.section";
+import { ReadySection } from "../sections/ready.section";
+import { WhatLearnAUXSection } from "../sections/what-learn.section-aux";
+
+const linkToFigmaPresentation =
+	"https://www.figma.com/proto/X7qFquFZQ73lWDPOgDvpwB/AUX-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=0%3A1&node-id=1-19&node-type=frame&viewport=976%2C227%2C0.36&t=wILo5hP0sabvCEwB-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A19";
+
+const accordionData = [
+	{
+		title: "Почему именно этот курс?",
+		content: `В рамках нашего курса мы стремимся показать, как проходят исследования в реальном мире, а не в идеализированных методичках. Мы опираемся на многолетний опыт проведения исследований и расскажем, как избежать ловушек процессов и извлечь максимум из любых нестандартных ситуаций (а такие ситуации часто преобладают)
+`,
+	},
+	{
+		title: "Я новичок в исследованиях, смогу потянуть?",
+		content: `Продуктовые исследования - не ядерная физика. Мы расскажем обо всем доступным и простым языком`,
+	},
+
+	{
+		title: "Что я получу по итогу?",
+		content: `Вы будете уверенно ориентироваться в методах проведения исследований и проводить их самостоятельно, не боясь, что вас сочтут профаном. Вы будете знать нюансы, которые не знают даже опытные исследователи. Вы получаете не только знания, но и правильный майндсет`,
+	},
+];
+
+export default function Home() {
+	return (
+		<>
+			<HeroSection
+				title="Продвинутый Ресёрч"
+				description="Окунись в мир пользовательских исследований на продвинутом урове. Только релевантные топики. Исследования, их виды и какой метод выбрать в каком случае. Проведение и анализ интервью. Использование ИИ. Защита и аргументация итогов перед командой"
+				heroImg="/AUXheroSection.png"
+				date="Февраль 2025"
+				linkToProgram={linkToFigmaPresentation}
+			/>
+			<Section
+				src={"https://t.me/FRaklov"}
+				invert
+				imagePath="/who.png"
+				heading="Для кого этот курс"
+				buttonText="Узнать больше"
+			>
+				<Box direction="column" distance={16}>
+					<p className="color-tertiary text-large">
+						Курс предназначен для специалистов, <br />
+						работающих в следующих областях:
+					</p>
+					<Box direction="column" distance={8}>
+						<span className="text-strong text-large color-secondary">
+							UX/CX исследователи
+						</span>
+						<span className="text-strong text-large color-secondary">
+							Продуктовые дизайнеры
+						</span>
+						<span className="text-strong text-large color-secondary">
+							Продакт и проджект менеджеры
+						</span>
+					</Box>
+				</Box>
+			</Section>
+
+			<Section
+				src={linkToFigmaPresentation}
+				imagePath="/keys.png"
+				heading="Ключевые моменты"
+				buttonText="Узнать больше"
+			>
+				<Box direction="column" distance={8}>
+					<span className="text-strong text-large color-secondary">
+						Общая длительность 12 недель
+					</span>
+					<span className="text-strong text-large color-secondary">
+						2.5 - 3 часа живых занятий в неделю
+					</span>
+					<span className="text-strong text-large color-secondary">
+						4+ часов дополнительных видео материалов
+					</span>
+					<span className="text-strong text-large color-secondary">
+						Много практики
+					</span>
+					<span className="text-strong text-large color-secondary">
+						Небольшие группы на потоке (до 20-ти человек)
+					</span>
+				</Box>
+			</Section>
+
+			<WhatLearnAUXSection />
+
+			<Section
+				src={"https://t.me/FRaklov"}
+				invert
+				imagePath="/format.png"
+				heading="Формат занятий"
+				buttonText="Есть вопросы, пиши!"
+			>
+				<p className="text-large">
+					В течении всего курса (12 недель) по выходным (суббота или
+					воскресенье, день обсуждаем), в 11:00 по МСК, будет
+					проходить занятие в режиме онлайн конференции. После каждой
+					лекции будет даваться домашнее задание а также
+					дополнительные материалы
+				</p>
+			</Section>
+
+			<Section
+				src={"https://t.me/FRaklov"}
+				imagePath="/fedor.jpeg"
+				heading="Давай знакомиться"
+				buttonText="Будем на связи!"
+			>
+				<p className="text-large">
+					Меня зову Фёдор. Я Sr. UX Researcher в Kaspersky.
+					Специализируюсь на исследовании сложных продуктов
+					кибер-безопасности в сегменте B2B, также работаю по
+					продуктам входящим в Kaspersky OS. Работал в Ингосстрах.
+					Улучшал пользовательский опыт во всех страховых продуктах. В
+					свободное время помогаю компаниям выстроить сервис, служащий
+					клиенту. Также провожу глубинные интервью с применением
+					JTBD, чтобы помочь бизнесу развиваться.
+				</p>
+			</Section>
+
+			<FaqSection accordionData={accordionData} />
+			<ReadySection title="Готов стать высоклассным Исследователем пользовательского опыта?" />
+		</>
+	);
+}

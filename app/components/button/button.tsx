@@ -6,18 +6,18 @@ const StyledButton = styled.button`
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 400;
-	color: var(--main-invert-default);
+	color: var(var(--section-bg));
 	background: var(--main-default);
 	cursor: pointer;
 	transition: all 0.2s;
 
 	&:hover {
-		color: var(--main-invert-default);
+		color: var(var(--section-bg));
 		background: var(--main-hover);
 	}
 
 	&:active {
-		color: var(--main-invert-default);
+		color: var(var(--section-bg));
 		background: var(--main-active);
 	}
 `;
