@@ -53,7 +53,7 @@ const learnData = [
 export default function Home() {
 	return (
 		<>
-			<HeroSection />
+			<HeroSection title="Архитектор дизайн-систем" />
 			<Section
 				src={"https://t.me/arturdsgn"}
 				invert
