@@ -9,7 +9,7 @@ interface IImage extends HTMLAttributes<HTMLDivElement> {
 	path?: string;
 }
 
-export const Img = styled.div<IImage>`
+const Img = styled.div<IImage>`
 	background: url(${(props) => props.path});
 	background-size: cover;
 	background-position: center;
@@ -28,9 +28,9 @@ export const Img = styled.div<IImage>`
 export const Image = ({
 	min,
 	max,
-	def,
+	def = "100%",
 	height,
-	path,
+	path = "/who.png",
 	className,
 	...props
 }: IImage) => {

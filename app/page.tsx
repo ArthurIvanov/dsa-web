@@ -7,6 +7,7 @@ import { HeroSection } from "./sections/hero.section";
 import { ReadySection } from "./sections/ready.section";
 import { Testimonials } from "./sections/testimonials";
 import { WhatLearnSection } from "./sections/what-learn.section";
+import { Companies } from "./sections/companies";
 
 const accordionData = [
 	{
@@ -54,6 +55,7 @@ export default function Home() {
 	return (
 		<>
 			<HeroSection title="Архитектор дизайн-систем" />
+			<Companies />
 			<Section
 				src={"https://t.me/arturdsgn"}
 				invert
