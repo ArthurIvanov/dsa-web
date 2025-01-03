@@ -186,7 +186,7 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 64px;
-    background-color: var(--main-invert-default);
+    background-color: var(--section-bg);
 }
 
 .card {
