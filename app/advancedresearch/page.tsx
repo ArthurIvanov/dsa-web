@@ -112,6 +112,8 @@ export default function Home() {
 				imagePath="/fedor.jpeg"
 				heading="Давай знакомиться"
 				buttonText="Будем на связи!"
+				srcLKDN={"https://www.linkedin.com/in/fedor-raklov-a26bab140/"}
+				srcTG={"https://t.me/FRaklov"}
 			>
 				<p className="text-large">
 					Меня зовут Фёдор Раклов. Я Sr. UX Researcher в Kaspersky.

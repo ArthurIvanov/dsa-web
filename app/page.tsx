@@ -131,6 +131,8 @@ export default function Home() {
 				src={"https://t.me/arturdsgn"}
 				imagePath="/me.png"
 				heading="Давай знакомиться"
+				srcTG={"https://t.me/arturdsgn"}
+				srcLKDN={"https://www.linkedin.com/in/artur-dsgn/"}
 				buttonText="Будем на связи!"
 			>
 				<p className="text-large">
