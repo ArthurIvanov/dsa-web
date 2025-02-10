@@ -42,7 +42,7 @@ export const Globals = createGlobalStyle`
 
     
     --global-bg: var(--grey-50);
-    --subsection-bg: var(--grey-50);
+    --subsection-bg: var(--grey-100);
     --section-bg: var(--white);
 
     /* TYPOGRAPHY */
