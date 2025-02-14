@@ -12,6 +12,8 @@ const StyledCompanies = styled.div<ICompaniesProps>`
 	align-items: center;
 	justify-content: center;
 	gap: 16px;
+	padding: 64px;
+	background: white;
 
 	h2 {
 		text-align: center;

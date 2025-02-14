@@ -8,7 +8,7 @@ import { ReadySection } from "../sections/ready.section";
 import { WhatLearnAUXSection } from "../sections/what-learn.section-aux";
 
 const linkToFigmaPresentation =
-	"https://www.figma.com/proto/X7qFquFZQ73lWDPOgDvpwB/AUX-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=0%3A1&node-id=1-19&node-type=frame&viewport=976%2C227%2C0.36&t=wILo5hP0sabvCEwB-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A19";
+	"https://www.figma.com/proto/X7qFquFZQ73lWDPOgDvpwB/AUX-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=0%3A1&node-id=1-19&node-type=canvas&viewport=798%2C382%2C0.18&t=K7q1oJ7sxj6A4Rg9-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A19";
 
 const accordionData = [
 	{
@@ -37,6 +37,7 @@ export default function Home() {
 				date="Март 2025"
 				linkToProgram={linkToFigmaPresentation}
 				timing="1.5 - 2"
+				actions
 			/>
 			<Section
 				src={"https://t.me/FRaklov"}

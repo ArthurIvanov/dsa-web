@@ -1,7 +1,7 @@
 export const NavItems = [
 	{
 		title: "Архитектор Дизайн-систем",
-		url: "/",
+		url: "/dsarchitect",
 		cName: " ",
 		ref: false,
 	},

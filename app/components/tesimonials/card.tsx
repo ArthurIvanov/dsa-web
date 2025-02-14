@@ -19,7 +19,6 @@ const StyledCardClient = styled.div<ICardClient>`
 	width: 100%;
 	flex-direction: column;
 	img {
-		width: 150px;
 	}
 	.client-card-header {
 		display: flex;
