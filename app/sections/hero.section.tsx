@@ -10,6 +10,9 @@ interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	linkToProgram?: string;
 	heroImg?: string;
 	timing?: string;
+	actions?: boolean;
+	lessions?: boolean;
+	subTitle?: string;
 }
 
 const StyledHeroSection = styled.section<IHeroSectionProps>`
@@ -59,43 +62,54 @@ const StyledHeroSection = styled.section<IHeroSectionProps>`
 `;
 
 export const HeroSection: React.FC<IHeroSectionProps> = ({
-	title = "Архитектор Дизайн Систем",
-	date = "11 января 2025",
-	description = "Уникальный курс не имеющий аналогов во всём мире который вобрал в себя весь огромный, практический опыт работы с дизайн-системами от истоков образования до наших дней",
-	linkToProgram = "https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1",
+	title,
+	subTitle,
+	date,
+	description,
+	linkToProgram,
 	heroImg = "/heroHouse.png",
-	timing = "2.5 - 3",
+	timing,
+	actions,
+	lessions,
 }) => {
 	return (
 		<StyledHeroSection heroImg={heroImg} id="hero-section">
 			<div className="hero-section-bg section-shadow">
 				<div className="display-flex flex-column gap-32">
-					<h1>{title}</h1>
-					<div className="hero-section-list">
-						<Detail>
-							<Video size={24} /> Онлайн уроки
-						</Detail>
-						<Detail>
-							<Calendar size={24} /> {date}
-						</Detail>
-						<Detail>
-							<Clock size={24} /> {timing} часа живых занятий в
-							неделю
-						</Detail>
+					<div className="display-flex flex-column gap-16">
+						<h1>{title}</h1>
+						<h2>{subTitle}</h2>
 					</div>
+					{lessions ? (
+						<div className="hero-section-list">
+							<Detail>
+								<Video size={24} /> Онлайн уроки
+							</Detail>
+							<Detail>
+								<Calendar size={24} /> {date}
+							</Detail>
+							<Detail>
+								<Clock size={24} /> {timing} часа живых занятий
+								в неделю
+							</Detail>
+						</div>
+					) : null}
+
 					<p className="text-hero">{description}</p>
 				</div>
-				<div>
-					<a
-						type="button"
-						target="_blank"
-						rel="noopener noreferrer"
-						href={linkToProgram}
-						className="button-primary"
-					>
-						Подробнее
-					</a>
-				</div>
+				{actions ? (
+					<div>
+						<a
+							type="button"
+							target="_blank"
+							rel="noopener noreferrer"
+							href={linkToProgram}
+							className="button-primary"
+						>
+							Подробнее
+						</a>
+					</div>
+				) : null}
 			</div>
 		</StyledHeroSection>
 	);
