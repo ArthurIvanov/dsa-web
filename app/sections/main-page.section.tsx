@@ -29,7 +29,7 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 	max-width: var(--max-width);
 	margin: 0 auto;
 	display: flex;
-	height: 650px;
+	max-height: 650px;
 
 	.hero-section-bg {
 		background-color: var(--section-bg);
@@ -47,7 +47,7 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 		background-size: auto;
 		background-position: center;
 		background-repeat: no-repeat;
-		min-height: 650px;
+		max-height: 650px;
 		width: 100%;
 		padding: 64px;
 		justify-content: center;
@@ -59,6 +59,13 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 	.hero-section-list {
 		display: flex;
 		gap: 24px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.hero-section-bg {
+			padding: 32px;
+			min-height: 320px;
+		}
 	}
 
 	@media screen and (max-width: 560px) {
@@ -85,7 +92,6 @@ const StyledSection = styled.section<IMainPageSectionProps>`
 	display: flex;
 	flex-direction: row;
 	height: auto;
-
 	gap: 32px;
 
 	@media (max-width: 1024px) {
@@ -128,8 +134,8 @@ export const MainPageSection: React.FC<IMainPageSectionProps> = ({
 				<div className="hero-section-bg section-shadow">
 					<div className="display-flex flex-column gap-32">
 						<div className="display-flex flex-column gap-16">
-							<h1>{title}</h1>
-							<h2>{subTitle}</h2>
+							<h2>{title}</h2>
+							<h3>{subTitle}</h3>
 						</div>
 						{lessions ? (
 							<div className="hero-section-list">
