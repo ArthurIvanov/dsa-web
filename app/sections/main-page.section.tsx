@@ -31,6 +31,7 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 	display: flex;
 	max-height: 650px;
 
+
 	.hero-section-bg {
 		background-color: var(--section-bg);
 		min-height: 650px;
@@ -48,6 +49,7 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 		background-position: center;
 		background-repeat: no-repeat;
 		max-height: 650px;
+
 		width: 100%;
 		padding: 64px;
 		justify-content: center;
@@ -60,6 +62,7 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 		display: flex;
 		gap: 24px;
 	}
+
 
 	@media screen and (max-width: 1024px) {
 		.hero-section-bg {
@@ -136,6 +139,7 @@ export const MainPageSection: React.FC<IMainPageSectionProps> = ({
 						<div className="display-flex flex-column gap-16">
 							<h2>{title}</h2>
 							<h3>{subTitle}</h3>
+
 						</div>
 						{lessions ? (
 							<div className="hero-section-list">
