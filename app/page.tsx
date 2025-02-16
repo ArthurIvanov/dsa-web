@@ -1,12 +1,9 @@
 "use client";
 
 import { Box } from "./components/box/box";
-import { Section } from "./components/section/section";
-import { FaqSection } from "./sections/faq.section";
 import { HeroSection } from "./sections/hero.section";
 import { ReadySection } from "./sections/ready.section";
 import { Testimonials } from "./sections/testimonials";
-import { WhatLearnSection } from "./sections/what-learn.section";
 import { Companies } from "./sections/companies";
 import { MainPageSection } from "./sections/main-page.section";
 
@@ -68,7 +65,8 @@ export default function Home() {
 				heroImg="/heroHouseSquare.png"
 				actions
 				lessions
-				date="Март"
+				date="10 Мая 2025"
+
 				timing="2.5 - 3"
 				subTitle="Архитектор Дизайн-систем"
 				description="Уникальный курс, не имеющий аналогов во всём мире, который вобрал в себя весь огромный, практический опыт работы с дизайн-системами, от истоков образования до
@@ -80,7 +78,8 @@ export default function Home() {
 				actions
 				lessions
 				invert
-				date="Март"
+				date="15 Марта 2025"
+
 				timing="1.5 - 2"
 				subTitle="Продвинутый Ресёрч"
 				description="Окунись в мир пользовательских исследований на продвинутом урове. Только релевантные топики. Исследования, их виды и какой метод выбрать в каком случае. Проведение и анализ интервью. Использование ИИ. Защита и аргументация итогов перед командой"

@@ -57,8 +57,9 @@ export default function Home() {
 			<HeroSection
 				lessions
 				actions
-				title="Архитектор Дизайн-cистем"
-				date="11 января 2025"
+				title="Архитектор Дизайн-cистем" new-changes
+				date="10 мая 2025"
+
 				description="Уникальный курс, не имеющий аналогов во всём мире, который вобрал в себя весь огромный, практический опыт работы с дизайн-системами, от истоков образования до
 наших дней"
 				linkToProgram="https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1"
