@@ -7,6 +7,7 @@ import Link from "next/link";
 interface IMainPageSectionProps extends HTMLAttributes<HTMLDivElement> {
 	title?: string;
 	date?: string;
+	stream?: string;
 	description?: string;
 	linkToProgram?: any;
 	heroImg?: any;
@@ -30,7 +31,6 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 	margin: 0 auto;
 	display: flex;
 	max-height: 650px;
-
 
 	.hero-section-bg {
 		background-color: var(--section-bg);
@@ -62,7 +62,6 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 		display: flex;
 		gap: 24px;
 	}
-
 
 	@media screen and (max-width: 1024px) {
 		.hero-section-bg {
@@ -116,6 +115,7 @@ export const MainPageSection: React.FC<IMainPageSectionProps> = ({
 	title,
 	subTitle,
 	date,
+	stream = "Онлайн",
 	description,
 	linkToProgram,
 	heroImg,
@@ -139,12 +139,11 @@ export const MainPageSection: React.FC<IMainPageSectionProps> = ({
 						<div className="display-flex flex-column gap-16">
 							<h2>{title}</h2>
 							<h3>{subTitle}</h3>
-
 						</div>
 						{lessions ? (
 							<div className="hero-section-list">
 								<Detail>
-									<Video size={24} /> Онлайн
+									<Video size={24} /> {stream}
 								</Detail>
 								<Detail>
 									<Calendar size={24} /> {date}
