@@ -7,6 +7,7 @@ interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	title?: string;
 	date?: string;
 	description?: string;
+	stream?: string;
 	linkToProgram?: string;
 	heroImg?: string;
 	timing?: string;
@@ -65,6 +66,7 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 	title,
 	subTitle,
 	date,
+	stream = "Онлайн уроки",
 	description,
 	linkToProgram,
 	heroImg = "/heroHouse.png",
@@ -83,7 +85,7 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 					{lessions ? (
 						<div className="hero-section-list">
 							<Detail>
-								<Video size={24} /> Онлайн уроки
+								<Video size={24} /> {stream}
 							</Detail>
 							<Detail>
 								<Calendar size={24} /> {date}
