@@ -69,9 +69,9 @@ const Footer = ({ children }: any) => {
 							target="_blank"
 							rel="noopener noreferrer"
 							className="link-inverted"
-							href="tel:+79622637027"
+							href="tel:+79955056564"
 						>
-							+7 962 263 70 27
+							+7 995 505 65 64
 						</a>
 					</li>
 				</ul>

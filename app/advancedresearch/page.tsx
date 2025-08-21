@@ -31,14 +31,18 @@ export default function Home() {
 	return (
 		<>
 			<HeroSection
-				title="Продвинутый Ресёрч"
-				description="Окунись в мир пользовательских исследований на продвинутом урове. Только релевантные топики. Исследования, их виды и какой метод выбрать в каком случае. Проведение и анализ интервью. Использование ИИ. Защита и аргументация итогов перед командой"
-				heroImg="/AUXheroSection.png"
-				date="15 Марта 2025"
-				linkToProgram={linkToFigmaPresentation}
-				timing="1.5 - 2"
+				lessions
 				actions
+				stream="2-й поток"
+				title="Продвинутый Ресёрч"
+				new-changes
+				date="15 Августа 2025"
+				description="Окунись в мир пользовательских исследований на продвинутом урове. Только релевантные топики. Исследования, их виды и какой метод выбрать в каком случае. Проведение и анализ интервью. Использование ИИ. Защита и аргументация итогов перед командой"
+				linkToProgram={linkToFigmaPresentation}
+				timing="2 - 2.5 часа живых занятий в неделю"
+				heroImg="/AUXheroSection.png"
 			/>
+
 			<Section
 				src={"https://t.me/FRaklov"}
 				invert
@@ -117,7 +121,7 @@ export default function Home() {
 				srcTG={"https://t.me/FRaklov"}
 			>
 				<p className="text-large">
-					Меня зовут Фёдор Раклов. Я Sr. UX Researcher в Kaspersky.
+					Меня зовут Фёдор Раклов. Я UX Expert Researcher в Kaspersky.
 					Специализируюсь на исследовании сложных продуктов
 					кибер-безопасности в сегменте B2B, также работаю по
 					продуктам входящим в Kaspersky OS. Работал в Ингосстрах.
