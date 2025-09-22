@@ -21,6 +21,28 @@ export const Globals = createGlobalStyle`
     --grey-800: #1B1D25;
     --grey-900: #0F1014;
 
+   --green-50: #E8FCEC;
+    --green-100: #D8FBDF;
+    --green-200: #a3f5c5ff;
+    --green-300: #68eea6ff;
+    --green-400: #17ce5aff;
+    --green-500: #12a54fff;
+    --green-600: #0f843cff;
+    --green-700: #23512C;
+    --green-800: #162A1A;
+    --green-900: #0C170E;
+
+   --blue-50: #e8effcff;
+    --blue-100: #d8e7fbff;
+    --blue-200: #a3c5f5ff;
+    --blue-300: #689beeff;
+    --blue-400: #175dceff;
+    --blue-500: #1248a5ff;
+    --blue-600: #0f3a84ff;
+    --blue-700: #232f51ff;
+    --blue-800: #161d2aff;
+    --blue-900: #0c0f17ff;
+
     /* COLORS */
     --main-default: var(--grey-900);
     --main-hover: var(--grey-800);
@@ -44,6 +66,10 @@ export const Globals = createGlobalStyle`
     --global-bg: var(--grey-50);
     --subsection-bg: var(--grey-100);
     --section-bg: var(--white);
+    --status-bg-subtle: var(--green-50);
+    --status-bg-default: var(--green-500);
+    --info-bg-subtle: var(--green-50);
+    --info-bg-default: var(--green-500);
 
     /* TYPOGRAPHY */
     font-family: Inter, sans-serif;

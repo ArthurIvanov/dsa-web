@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Detail = styled.span`
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 20px;
 	font-weight: 500;
 	display: inline-flex;
 	align-items: center;
@@ -10,7 +10,7 @@ export const Detail = styled.span`
 	color: var(--secondary-default);
 
 	@media screen and (max-width: 560px) {
-		font-size: 14px;
-		line-height: 20px;
+		font-size: 12px;
+		line-height: 16px;
 	}
 `;

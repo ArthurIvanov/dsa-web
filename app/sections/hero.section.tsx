@@ -2,6 +2,7 @@ import React, { HTMLAttributes } from "react";
 import { Calendar, Clock, Video } from "react-feather";
 import { Detail } from "../components/detail/detail";
 import styled from "styled-components";
+import { Badge } from "../components/badge/badge";
 
 interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	title?: string;
@@ -14,6 +15,8 @@ interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	actions?: boolean;
 	lessions?: boolean;
 	subTitle?: string;
+	statusText?: string;
+	status?: "green" | "blue";
 }
 
 const StyledHeroSection = styled.section<IHeroSectionProps>`
@@ -22,6 +25,7 @@ const StyledHeroSection = styled.section<IHeroSectionProps>`
 	margin: 0 auto;
 	display: flex;
 	height: auto;
+    position: relative;
 
 	.hero-section-bg {
 		background: url(${(props) => props.heroImg});
@@ -60,6 +64,11 @@ const StyledHeroSection = styled.section<IHeroSectionProps>`
 			gap: 8px;
 		}
 	}
+        .status {
+        position: absolute;
+        top 0;
+        left: 0;
+        }
 `;
 
 export const HeroSection: React.FC<IHeroSectionProps> = ({
@@ -73,10 +82,17 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 	timing,
 	actions,
 	lessions,
+	status = "green",
+	statusText,
 }) => {
 	return (
 		<StyledHeroSection heroImg={heroImg} id="hero-section">
 			<div className="hero-section-bg section-shadow">
+				{statusText ? (
+					<div className="status">
+						<Badge appearance={status}>{statusText}</Badge>
+					</div>
+				) : null}
 				<div className="display-flex flex-column gap-32">
 					<div className="display-flex flex-column gap-16">
 						<h1>{title}</h1>

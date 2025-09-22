@@ -39,8 +39,10 @@ export default function Home() {
 				date="15 Августа 2025"
 				description="Окунись в мир пользовательских исследований на продвинутом урове. Только релевантные топики. Исследования, их виды и какой метод выбрать в каком случае. Проведение и анализ интервью. Использование ИИ. Защита и аргументация итогов перед командой"
 				linkToProgram={linkToFigmaPresentation}
-				timing="2 - 2.5 часа живых занятий в неделю"
+				timing="2 - 2.5"
 				heroImg="/AUXheroSection.png"
+				status="green"
+				statusText="Поток идёт"
 			/>
 
 			<Section

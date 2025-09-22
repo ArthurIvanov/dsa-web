@@ -66,6 +66,8 @@ export default function Home() {
 				linkToProgram="https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1"
 				heroImg="/heroHouse.png"
 				timing="2.5 - 3"
+				status="green"
+				statusText="Поток идёт"
 			/>
 			<Companies />
 			<Section
