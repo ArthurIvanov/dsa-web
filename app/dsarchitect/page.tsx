@@ -65,7 +65,7 @@ export default function Home() {
 наших дней"
 				linkToProgram="https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1"
 				heroImg="/heroHouse.png"
-				timing="2.5 - 3"
+				timing="3 - 3.5"
 				status="green"
 				statusText="Поток идёт"
 			/>
@@ -109,16 +109,16 @@ export default function Home() {
 						Общая длительность 12 недель
 					</span>
 					<span className="text-strong text-large color-secondary">
-						2.5 - 3 часа живых занятий в неделю
+						3 - 3.5 часа живых занятий в неделю
 					</span>
 					<span className="text-strong text-large color-secondary">
-						4+ часов дополнительных видео материалов
+						20+ часов дополнительных видео материалов
 					</span>
 					<span className="text-strong text-large color-secondary">
 						Много практики
 					</span>
 					<span className="text-strong text-large color-secondary">
-						Небольшие группы на потоке (10-15 человек)
+						Небольшие группы на потоке (20-25 человек)
 					</span>
 				</Box>
 			</Section>
@@ -152,11 +152,11 @@ export default function Home() {
 				<p className="text-large">
 					Привет! Меня зовут Артур. Я автор, идейный вдохновитель и
 					тот, кто будет тебя обучать на этом курсе. Кратко о себе. В
-					дизайне более 10 лет. На данный момент работаю на позиции
-					Team Lead и руковожу разработкой дизайн-системы для B2B
+					дизайне более 13-ти лет. На данный момент работаю на позиции
+					Design Lead, руковожу разработкой дизайн-системы для B2B
 					линейки продуктов в Лаборатории Касперского. Опыт работы с
-					дизайн-системами более 6 лет. Отлично разбираюсь во Фронте,
-					Бэке и смежных областях
+					дизайн-системами более 6-ти лет. Отлично разбираюсь во
+					Фронте, Бэке и смежных областях
 				</p>
 			</Section>
 			<Testimonials />

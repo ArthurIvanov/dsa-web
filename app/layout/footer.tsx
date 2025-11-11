@@ -64,16 +64,6 @@ const Footer = ({ children }: any) => {
 							artur.dsgn@yandex.ru
 						</a>
 					</li>
-					<li>
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							className="link-inverted"
-							href="tel:+79955056564"
-						>
-							+7 995 505 65 64
-						</a>
-					</li>
 				</ul>
 
 				<ul>
