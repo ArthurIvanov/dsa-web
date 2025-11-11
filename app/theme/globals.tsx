@@ -74,12 +74,14 @@ export const Globals = createGlobalStyle`
     /* TYPOGRAPHY */
     font-family: Inter, sans-serif;
 
-    .gap-section {
-        gap: 64;
-    
-    }
     
 }
+
+
+    .gap-section {
+        gap: 64px;
+    
+    }
 
 .color-secondary {
     color: var(--secondary-default);
@@ -281,6 +283,7 @@ p, li {
 
     &:hover {
         color: var(--main-hover);
+        border-radius: 999px;
     }
 
     &:active {
@@ -299,6 +302,7 @@ p, li {
 
     &:hover {
         color: var(--main-invert-hover);
+        border-radius: 999px;
     }
 
     &:active {
@@ -320,22 +324,26 @@ p, li {
     color: var(--main-invert-default);
     background: var(--main-default);
     cursor: pointer;
-    transition: all 0.2s;
+    border-radius: 2px;
+    transition: all 0.3s;
 
     &:hover {
+        border-radius: 64px;
         color: var(--main-invert-default);
         background: var(--main-hover);
+        box-shadow: 0px 2px 16px rgba(34, 49, 69, 0.24);
+
     }
 
     &:active {
         color: var(--main-invert-default);
         background: var(--main-active);
+        box-shadow: 0px 4px 24px rgba(34, 49, 69, 0.24);
     }
 }
 
 
-.main {
-		
+.main {	
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
@@ -344,24 +352,47 @@ p, li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 64px;
-    gap: 64px;
     
 }
 
-
-@media screen and (max-width: 1024px) {
-    .main {
-         gap: 24px;
+@media only screen and (max-width : 560px) {
+ .main {
+         gap: 16px;
          padding: 16px;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 561px) {
+    .main {
+         padding: 24px;
+         gap: 24px;    
     }
 
 }
 
-
-@media screen and (max-width: 560px) {
+@media only screen and (min-width: 900px) {
     .main {
-         gap: 16px;    
+         padding: 32px; 
+         gap: 32px;   
+    }
+
+// }
+
+@media only screen and (min-width: 1200px) {
+    .main {
+         padding: 48px;   
+         gap: 48px;      
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .main {
+         padding: 64px;   
+         gap: 64px;      
     }
 
 }

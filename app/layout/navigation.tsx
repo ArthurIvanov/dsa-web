@@ -20,6 +20,16 @@ const StyledNavBar = styled.nav`
 	left: 50%;
 	width: 100%;
 	transform: translate(-50%);
+	a {
+		border-radius: 999px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		a {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
 
 	.navbar-content {
 		max-width: 1622px;

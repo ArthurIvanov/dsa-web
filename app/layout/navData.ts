@@ -13,7 +13,7 @@ export const NavItems = [
 		ref: false,
 	},
 	{
-		title: "Бесплатные материалы",
+		title: "Материалы",
 		url: "https://rutube.ru/plst/353013",
 		cName: " ",
 		ref: true,

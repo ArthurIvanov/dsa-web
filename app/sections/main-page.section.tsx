@@ -94,13 +94,26 @@ const StyledSection = styled.section<IMainPageSectionProps>`
 	display: flex;
 	flex-direction: row;
 	height: auto;
-	gap: 32px;
+	gap: 0;
 
 	@media (max-width: 1024px) {
 		height: auto;
 
+		.text-hero {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
 		.section-image {
 			display: none;
+		}
+	}
+	@media (max-width: 1200px) {
+		height: auto;
+
+		.text-hero {
+			font-size: 16px;
+			line-height: 24px;
 		}
 	}
 

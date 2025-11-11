@@ -3,7 +3,7 @@ export const NAV_LINKS = [
 	{
 		href: "https://rutube.ru/plst/353013",
 		key: "курсы",
-		label: "Бесплатные материалы",
+		label: "Материалы",
 		ref: true,
 	},
 	{
