@@ -6,6 +6,7 @@ import { NavLink } from "../components/link/link";
 import styled from "styled-components";
 import { NavItems } from "./navData";
 import { useState } from "react";
+import { CourseDropdown } from "../components/dropdown/dropdown";
 
 const StyledNavBar = styled.nav`
 	display: flex;
@@ -42,7 +43,7 @@ const StyledNavBar = styled.nav`
 
 	.MenuItems {
 		list-style: none;
-		display: flex;
+		display: none;
 		align-items: center;
 		white-space: nowrap;
 	}
@@ -54,6 +55,9 @@ const StyledNavBar = styled.nav`
 	@media screen and (max-width: 850px) {
 		.NavbarItems {
 			z-index: 99;
+		}
+		.nav-desktop {
+			display: none;
 		}
 		.MenuItems {
 			display: flex;
@@ -103,7 +107,15 @@ const Navbar = () => {
 						height={56}
 					/>
 				</Link>
-
+				<div className="nav-desktop display-flex gap-32 flex-align-center">
+					<CourseDropdown items={NavItems} dropdownTitle="Курсы" />
+					<NavLink
+						className="button-primary"
+						href="https://rutube.ru/plst/353013"
+					>
+						Записаться
+					</NavLink>
+				</div>
 				<div className="Hamburger-Cross-Icons" onClick={handleClick}>
 					{open ? <X size={24} /> : <Menu size={24} />}
 				</div>

@@ -129,47 +129,6 @@ export const Globals = createGlobalStyle`
 
 }
 
-h1 {
-    font-size: 80px;
-    line-height: 92px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-h2 {
-    font-size: 56px;
-    line-height: 64px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-h3 {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-h4 {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-h5 {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-h6 {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 600;
-    display: inline-block;
-}
 
 
 * {
@@ -355,48 +314,6 @@ p, li {
     
 }
 
-@media only screen and (max-width : 560px) {
- .main {
-         gap: 16px;
-         padding: 16px;
-    }
-}
-
-
-
-
-@media only screen and (min-width: 561px) {
-    .main {
-         padding: 24px;
-         gap: 24px;    
-    }
-
-}
-
-@media only screen and (min-width: 900px) {
-    .main {
-         padding: 32px; 
-         gap: 32px;   
-    }
-
-// }
-
-@media only screen and (min-width: 1200px) {
-    .main {
-         padding: 48px;   
-         gap: 48px;      
-    }
-
-}
-
-@media only screen and (min-width: 1400px) {
-    .main {
-         padding: 64px;   
-         gap: 64px;      
-    }
-
-}
-
 
 .w-100 {
     max-width: 100%;
@@ -469,7 +386,7 @@ flex-grow {
 }
 
 .justify-stretch {
-    justinfy-content: sretch;
+    justify-content: sretch;
 
 }
 
@@ -479,10 +396,10 @@ flex-grow {
 }
 
 .display-grid {
-    display-grid;
+    display: grid;
 }
 
-.3-columns {
+.columns-3 {
     grid-template-columns: repeat(3, 1fr);
 
 }
@@ -550,8 +467,53 @@ flex-grow {
 
 
 
-@media screen and (max-width: 1024px) {
+
+
+@media only screen and (max-width : 560px) {
+ .main {
+         gap: 16px;
+         padding: 16px;
+    }
+
     h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 561px) {
+    .main {
+         padding: 24px;
+         gap: 24px;    
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    .main {
+         padding: 32px; 
+         gap: 32px;   
+    }
+
+     h1 {
     font-size: 56px;
     line-height: 64px;
 }
@@ -572,30 +534,109 @@ h4 {
     line-height: 36px;
 }
 
-
 }
 
-@media screen and (max-width: 560px) {
+@media only screen and (min-width: 1200px) {
+    .main {
+         padding: 48px;   
+         gap: 48px;      
+    }
+
     h1 {
-        font-size: 32px;
-        line-height: 40px;
-    }
+    font-size: 80px;
+    line-height: 92px;
+    font-weight: 600;
+    display: inline-block;
+}
 
-    h2 {
-        font-size: 32px;
-        line-height: 40px;
-    }
+h2 {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 600;
+    display: inline-block;
+}
 
-    h3 {
-        font-size: 24px;
-        line-height: 32px;
-    }
+h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    display: inline-block;
+}
 
-    h4 {
-        font-size: 20px;
-        line-height: 24px;
-    }
+h4 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    display: inline-block;
+}
+
 
 }
+
+@media only screen and (min-width: 1400px) {
+    .main {
+         padding: 48px;   
+         gap: 48px;      
+    }
+
+    h1 {
+    font-size: 80px;
+    line-height: 92px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+}
+
 
 `;
