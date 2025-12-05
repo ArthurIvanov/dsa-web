@@ -18,10 +18,10 @@ export const NavItems = [
 		cName: " ",
 		ref: true,
 	},
-	{
-		title: "Записаться на курс",
-		url: "https://t.me/arturdsgn",
-		cName: "button-primary",
-		ref: true,
-	},
+	// {
+	// 	title: "Записаться на курс",
+	// 	url: "https://t.me/arturdsgn",
+	// 	cName: "button-primary",
+	// 	ref: true,
+	// },
 ];
