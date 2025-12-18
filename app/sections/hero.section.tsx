@@ -25,7 +25,7 @@ const StyledHeroSection = styled.section<IHeroSectionProps>`
 	margin: 0 auto;
 	display: flex;
 	height: auto;
-    position: relative;
+	position: relative;
 
 	.hero-section-bg {
 		background: url(${(props) => props.heroImg});
@@ -64,11 +64,11 @@ const StyledHeroSection = styled.section<IHeroSectionProps>`
 			gap: 8px;
 		}
 	}
-        .status {
-        position: absolute;
-        top 0;
-        left: 0;
-        }
+	.status {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 `;
 
 export const HeroSection: React.FC<IHeroSectionProps> = ({
