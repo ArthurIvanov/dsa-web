@@ -42,7 +42,7 @@ export default function Home() {
 				timing="2 - 2.5"
 				heroImg="/AUXheroSection.png"
 				status="green"
-				statusText="Поток идёт"
+				statusText="Идёт набор"
 			/>
 
 			<Section
