@@ -57,17 +57,17 @@ export default function Home() {
 			<HeroSection
 				lessions
 				actions
-				stream="7-й поток"
+				stream="8-й поток"
 				title="Архитектор Дизайн-cистем"
 				new-changes
-				date="13 Сентября 2025"
+				date="10 Января 2026"
 				description="Уникальный курс, не имеющий аналогов во всём мире, который вобрал в себя весь огромный, практический опыт работы с дизайн-системами, от истоков образования до
 наших дней"
 				linkToProgram="https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1"
 				heroImg="/heroHouse.png"
 				timing="3 - 3.5"
-				status="green"
-				statusText="Поток идёт"
+				status="blue"
+				statusText="Идёт набор"
 			/>
 			<Companies />
 			<Section

@@ -16,7 +16,8 @@ interface ICardClient extends HTMLAttributes<HTMLDivElement> {
 const StyledCardClient = styled.div<ICardClient>`
 	background-color: var(--section-bg);
 	display: flex;
-	width: 100%;
+	width: 560px;
+	margin: 0 auto;
 	flex-direction: column;
 	img {
 	}
