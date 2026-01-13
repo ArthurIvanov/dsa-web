@@ -67,7 +67,7 @@ export default function Home() {
 				heroImg="/heroHouse.png"
 				timing="3 - 3.5"
 				status="blue"
-				statusText="Идёт набор"
+				statusText="Поток стартовал"
 			/>
 			<Companies />
 			<Section
