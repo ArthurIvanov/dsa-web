@@ -58,10 +58,6 @@ export const Globals = createGlobalStyle`
     --border-clean: var(--grey-200);
     --border-clean-invert: var(--grey-600);
 
-    --main-invert-default: var(--grey-50);
-    --main-invert-hover: var(--grey-100);
-    --main-invert-active: var(--grey-200);
-
     
     --global-bg: var(--grey-50);
     --subsection-bg: var(--grey-100);
@@ -85,10 +81,6 @@ export const Globals = createGlobalStyle`
 
 .color-secondary {
     color: var(--secondary-default);
-}
-
-.color-tertiary {
-    color: var(--tertiary-default);
 }
 
 .color-tertiary {
@@ -159,7 +151,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-colums:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .container {
@@ -361,7 +353,7 @@ img {
     display: flex;
 }
 
-flex-grow {
+.flex-grow {
     flex-grow: 1;
 }
 
@@ -386,12 +378,12 @@ flex-grow {
 }
 
 .justify-stretch {
-    justify-content: sretch;
+    justify-content: stretch;
 
 }
 
 .align-stretch {
-    align-items: sretch;
+    align-items: stretch;
 
 }
 
@@ -415,7 +407,7 @@ flex-grow {
 }
 
 .gap-24 {
-    gap: 32px;
+    gap: 24px;
 }
 
 .gap-32 {

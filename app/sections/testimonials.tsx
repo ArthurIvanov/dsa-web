@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import styled from "styled-components";
 import { ChevronLeft, ChevronRight } from "react-feather";
-import { CardClient } from "../components/tesimonials/card";
+import { CardClient } from "../components/testimonials/card";
 
 const StyledTestimonials = styled.section`
 	h2 {

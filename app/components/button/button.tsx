@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface IButtonProps {
+	children: React.ReactNode;
+}
+
 const StyledButton = styled.button`
 	display: inline-flex;
 	padding: 16px 32px;

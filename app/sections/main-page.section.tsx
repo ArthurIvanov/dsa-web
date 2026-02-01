@@ -13,7 +13,7 @@ interface IMainPageSectionProps extends HTMLAttributes<HTMLDivElement> {
 	heroImg?: any;
 	timing?: string;
 	actions?: boolean;
-	lessions?: boolean;
+	lessons?: boolean;
 	subTitle?: string;
 	invert?: boolean;
 	imagePath?: any;
@@ -134,7 +134,7 @@ export const MainPageSection: React.FC<IMainPageSectionProps> = ({
 	heroImg,
 	timing,
 	actions,
-	lessions,
+	lessons,
 	invert,
 }) => {
 	return (
@@ -153,7 +153,7 @@ export const MainPageSection: React.FC<IMainPageSectionProps> = ({
 							<h2>{title}</h2>
 							<h3>{subTitle}</h3>
 						</div>
-						{lessions ? (
+						{lessons ? (
 							<div className="hero-section-list">
 								<Detail>
 									<Video size={24} /> {stream}
