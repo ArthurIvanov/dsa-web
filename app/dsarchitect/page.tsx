@@ -55,7 +55,7 @@ export default function Home() {
 	return (
 		<>
 			<HeroSection
-				lessions
+				lessons
 				actions
 				stream="8-й поток"
 				title="Архитектор Дизайн-cистем"

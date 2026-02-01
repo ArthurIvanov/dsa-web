@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion } from "../components/accodrion/accordion";
+import { Accordion } from "../components/accordion/accordion";
 
 interface IAccordionData {
 	accordionData: {

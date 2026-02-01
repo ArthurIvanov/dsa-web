@@ -13,7 +13,7 @@ interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	heroImg?: string;
 	timing?: string;
 	actions?: boolean;
-	lessions?: boolean;
+	lessons?: boolean;
 	subTitle?: string;
 	statusText?: string;
 	status?: "green" | "blue";
@@ -81,7 +81,7 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 	heroImg = "/heroHouse.png",
 	timing,
 	actions,
-	lessions,
+	lessons,
 	status = "green",
 	statusText,
 }) => {
@@ -98,7 +98,7 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 						<h1>{title}</h1>
 						<h2>{subTitle}</h2>
 					</div>
-					{lessions ? (
+					{lessons ? (
 						<div className="hero-section-list">
 							<Detail>
 								<Video size={24} /> {stream}

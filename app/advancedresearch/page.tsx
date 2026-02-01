@@ -31,7 +31,7 @@ export default function Home() {
 	return (
 		<>
 			<HeroSection
-				lessions
+				lessons
 				actions
 				stream="3-й поток"
 				title="Продвинутый Ресёрч"

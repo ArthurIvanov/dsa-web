@@ -64,7 +64,7 @@ export default function Home() {
 			<MainPageSection
 				heroImg="/heroHouseSquare.png"
 				actions
-				lessions
+				lessons
 				stream="8-й поток"
 				date="10 Января 2026"
 				timing="2.5 - 3"
@@ -76,7 +76,7 @@ export default function Home() {
 			<MainPageSection
 				heroImg="/researhcHeroSquare.png"
 				actions
-				lessions
+				lessons
 				invert
 				stream="3-й поток"
 				date="TBD"
