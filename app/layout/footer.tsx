@@ -110,7 +110,7 @@ const Footer = ({ children }: any) => {
 					</li>
 				</ul>
 			</div>
-			<div className="footer-signature">2025 © Sharped Skills</div>
+			<div className="footer-signature">2026 © Sharped Skills</div>
 		</StyledFooter>
 	);
 };

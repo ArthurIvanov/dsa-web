@@ -24,7 +24,8 @@ const StyledSection = styled.section<ISection>`
 	background-color: var(--section-bg);
 	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
 	height: 650px;
-	pading: 64px;
+	border-radius: 16px;
+	overflow: hidden;
 
 	.section-heading {
 		display: inline-flex;

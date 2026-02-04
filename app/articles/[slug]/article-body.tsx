@@ -5,6 +5,7 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import type { Post } from "@/lib/posts";
 import styled from "styled-components";
+import { useState } from "react";
 
 const Wrap = styled.article`
 	max-width: 800px;
@@ -47,19 +48,14 @@ const PostDate = styled.time`
 `;
 
 const CoverWrap = styled.div`
-	border-radius: 16px;
-
 	position: relative;
 	width: 100%;
 	aspect-ratio: 16 / 9;
 	background: var(--grey-100);
 	overflow: hidden;
 	margin-bottom: 32px;
-	border-radius: 0;
-
-	img {
-		object-fit: cover;
-	}
+	border-radius: 16px;
+	overflow: hidden;
 `;
 
 const Body = styled.div`

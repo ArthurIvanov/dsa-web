@@ -1,18 +1,22 @@
 ---
-title: Мой первый пост
+title: '"Hello World" или Запускаем наш блог!'
 slug: hello-world
-date: "2024-05-31"
-image: /format.png
+date: "2026-02-04"
+image: /hello-world.png
 ---
 
-Pellentesque condimentum velit vel justo rutrum, sit amet commodo diam tincidunt. Nunc diam massa, interdum ut aliquet at, scelerisque ac ex. Integer cursus sem ac pretium posuere. Ut at odio nulla.
+## Всем привет!
 
-## Подзаголовок
+И это наша первая статья. Мы развиваемся и хотим поделиться знаниями и интересными вещами не только через курсы, но и через небольшие заметки и статьи!
 
-Phasellus nec ante luctus, egestas dui id, maximus dui. In aliquam elit sit amet sollicitudin luctus. Nunc nec leo quis ante vestibulum egestas. In dignissim libero vitae congue bibendum. Sed iaculis eros a leo pellentesque, et ultrices leo malesuada. Nullam ultrices rutrum accumsan.
+Что будем освещать:
 
-- Список первый
-- Список второй
-- Список третий
+-   Лайфхаки и полезные советы по дизайн-системам
+-   Интересные выжимки из продуктового дизайна
+-   Прикладой ИИ для дизайна, разработки и других смежных областей
+-   Менеджмент и развитие людей
+-   Исследования пользователей и инсайты по этой теме
 
-Donec ultrices in tortor eget facilisis. Pellentesque orci risus, vulputate consequat fermentum eget, euismod sed nulla. Sed luctus sapien quis magna lobortis porttitor.
+Конечно, это только малая часть того, о чем мы будем писать!
+
+Будем на связи!

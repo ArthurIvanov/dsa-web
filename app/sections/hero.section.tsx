@@ -26,6 +26,8 @@ const StyledHeroSection = styled.section<IHeroSectionProps>`
 	display: flex;
 	height: auto;
 	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
 
 	.hero-section-bg {
 		background: url(${(props) => props.heroImg});

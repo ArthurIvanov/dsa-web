@@ -13,6 +13,8 @@ const StyledAccordion = styled.div`
 	width: 100%;
 	gap: 32px;
 	box-shadow: 0px 8px 32px rgba(34, 49, 69, 0.04);
+	border-radius: 16px;
+	overflow: hidden;
 
 	.accordion-title {
 		cursor: pointer;

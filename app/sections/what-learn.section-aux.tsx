@@ -5,6 +5,8 @@ import styled from "styled-components";
 
 const StyledWhatLearnAUXSection = styled.section`
 	background: var(--section-bg);
+	border-radius: 16px;
+	overflow: hidden;
 
 	h2 {
 		display: flex;

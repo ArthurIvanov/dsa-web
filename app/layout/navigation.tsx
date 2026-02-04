@@ -4,8 +4,8 @@ import Image from "next/image";
 import { X, Menu } from "react-feather";
 import { NavLink } from "../components/link/link";
 import styled from "styled-components";
-import { NavItems } from "./navData";
-import { useState } from "react";
+import { NavItems, NavItemsMobile } from "./navData";
+import { useState, useRef } from "react";
 import { CourseDropdown } from "../components/dropdown/dropdown";
 
 const StyledNavBar = styled.nav`
@@ -93,6 +93,11 @@ const Navbar = () => {
 	const handleClick = () => {
 		setOpen(!open);
 	};
+	const [openArticles, setOpenArticles] = useState(false);
+	const ref = useRef<HTMLDivElement>(null);
+	const handleRedirect = () => {
+		setOpenArticles(false);
+	};
 	return (
 		<StyledNavBar>
 			<div className="navbar-content">
@@ -108,6 +113,13 @@ const Navbar = () => {
 					/>
 				</Link>
 				<div className="nav-desktop display-flex gap-32 flex-align-center">
+					<NavLink
+						rel={"noopener noreferrer"}
+						href={"/articles"}
+						onClick={handleRedirect}
+					>
+						Статьи
+					</NavLink>
 					<CourseDropdown items={NavItems} dropdownTitle="Курсы" />
 					<NavLink
 						className="button-primary"
@@ -124,7 +136,7 @@ const Navbar = () => {
 						open ? "MenuItems active" : "MenuItems"
 					}`}
 				>
-					{NavItems.map((Item, index) => {
+					{NavItemsMobile.map((Item, index) => {
 						return (
 							<li key={index}>
 								<NavLink

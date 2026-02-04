@@ -31,6 +31,16 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 	margin: 0 auto;
 	display: flex;
 	max-height: 650px;
+	border-radius: 0;
+
+	@media (max-width: 1024px) {
+		border-radius: 16px;
+		overflow: hidden;
+	}
+	@media (max-width: 1200px) {
+		border-radius: 0;
+		overflow: hidden;
+	}
 
 	.hero-section-bg {
 		background-color: var(--section-bg);
@@ -95,6 +105,8 @@ const StyledSection = styled.section<IMainPageSectionProps>`
 	flex-direction: row;
 	height: auto;
 	gap: 0;
+	border-radius: 16px;
+	overflow: hidden;
 
 	@media (max-width: 1024px) {
 		height: auto;

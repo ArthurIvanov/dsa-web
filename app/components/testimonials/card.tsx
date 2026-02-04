@@ -19,6 +19,8 @@ const StyledCardClient = styled.div<ICardClient>`
 	width: 560px;
 	margin: 0 auto;
 	flex-direction: column;
+	border-radius: 16px;
+	overflow: hidden;
 	img {
 	}
 	.client-card-header {
@@ -33,6 +35,27 @@ const StyledCardClient = styled.div<ICardClient>`
 		flex-direction: column;
 		gap: 4px;
 		padding: 12px;
+
+		.card-heading-title {
+			font-size: 22px;
+			line-height: 28px;
+			font-weight: 600;
+			color: var(--main-default);
+		}
+
+		.card-header-subtitles {
+			display: flex;
+			flex-direction: row;
+			gap: 4px;
+			align-items: center;
+		}
+
+		.card-header-subtitles-separator {
+			font-size: 24px;
+			line-height: 28px;
+			font-weight: 500;
+			color: var(--main-invert-active);
+		}
 	}
 
 	.client-card-body {
@@ -55,13 +78,16 @@ export const CardClient = ({
 			<div className="client-card-header">
 				<img alt="user" src={img} />
 				<div className="client-card-header-content">
-					<h5>{name}</h5>
-					<span className="color-secondary text-large text-strong">
-						{company}
-					</span>
-					<span className="color-tertiary text-small text-strong">
-						{role}
-					</span>
+					<h6 className="card-heading-title">{name}</h6>
+					<div className="card-header-subtitles">
+						<span className="color-secondary text-base">
+							{company}
+						</span>
+						<span className="card-header-subtitles-separator">
+							|
+						</span>
+						<span className="color-tertiary text-base">{role}</span>
+					</div>
 					{srcLKDN ? (
 						<Link
 							type="button"

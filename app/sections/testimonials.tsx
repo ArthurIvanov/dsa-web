@@ -119,9 +119,9 @@ const testimonialsData = [
 	{
 		img: "/client-1.png",
 		name: "Полина",
-		role: "Senior UX/UI Designer, Design System",
-		srcLKDN: "https://www.linkedin.com/in/polinagorkovenko/",
 		company: "Home Credit Bank",
+		role: "Sr Designer, Design System",
+		srcLKDN: "https://www.linkedin.com/in/polinagorkovenko/",
 		content:
 			"Очень много ценных материалов, приёмов и подходов получаешь за достаточно короткий срок. Чувствуется, что Артуру самому важно, чтобы ученики не просто ушли с курса с какой-то информацией, а положили в свои головы то, что потом им будет приносить пользу в долгую. Хочу поблагодарить за ту поддержку, которая была оказана в течении всего курса. Это правда ценно.  Информация разбиралась до мельчайших деталей, не было просто абстрактной теории, только практические, живые примеры",
 	},
