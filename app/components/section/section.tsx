@@ -174,15 +174,17 @@ export const Section = ({
 				</div>
 				{children}
 				<div>
-					<Link
-						type="button"
-						className="button-primary"
-						href={src}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{buttonText}
-					</Link>
+					{buttonText && (
+						<Link
+							type="button"
+							className="button-primary"
+							href={src}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{buttonText}
+						</Link>
+					)}
 				</div>
 			</Box>
 		</StyledSection>
