@@ -24,31 +24,6 @@ const accordionData = [
 	},
 ];
 
-const learnData = [
-	[
-		{ text: "Дизайн", bold: false },
-		{ text: "Дизайн", bold: false },
-		{ text: "Дизайн", bold: false },
-		{ text: "Дизайн", bold: false },
-		{ text: "Дизайн", bold: false },
-	],
-
-	[
-		{ text: "Разработка", bold: false },
-		{ text: "Основы Git, Github", bold: false },
-		{ text: "База HTML, CSS, JS, TS, React", bold: false },
-		{ text: "Создание библиотеки в коде", bold: false },
-		{ text: "Storybook и публикация проекта", bold: false },
-	],
-	[
-		{ text: "Управление и Евангелирование", bold: false },
-		{ text: "Архитектура библиотек", bold: false },
-		{ text: "Коммуникация с разработкой", bold: false },
-		{ text: "Что такое ДС для продуктовых команд", bold: false },
-		{ text: "Метрики Дизайн-системы", bold: false },
-	],
-];
-
 export default function Home() {
 	return (
 		<>
@@ -84,6 +59,17 @@ export default function Home() {
 				subTitle="Продвинутый Ресёрч"
 				description="Окунись в мир пользовательских исследований на продвинутом урове. Только релевантные топики. Исследования, их виды и какой метод выбрать в каком случае. Проведение и анализ интервью. Использование ИИ. Защита и аргументация итогов перед командой"
 				linkToProgram="/advancedresearch"
+			/>
+			<MainPageSection
+				heroImg="/tech-course-cquare.png"
+				actions
+				lessons
+				stream="1-й поток"
+				date="TBD"
+				timing="3 - 3.5"
+				subTitle="AI [tech] дизайнер-разработчик"
+				description="Хардкорный курс, который покрывает практически все аспекты дизайна и разработки плагинов для Figma, а также сборки компонентов разной сложности. Структурировано, выверено, осмысленно. Мы будем не просто писать забросы, а анализировать полученный код чтобы докручивать его до необходимого состояния"
+				linkToProgram="/plugindeveloper"
 			/>
 			<Testimonials />
 

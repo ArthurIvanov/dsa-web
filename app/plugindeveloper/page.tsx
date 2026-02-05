@@ -35,7 +35,7 @@ export default function Home() {
 				title="AI [tech] дизайнер-разработчик"
 				new-changes
 				date="TBD"
-				description="Хардкорный курс, который покрывает практически все аспекты дизайна и разработки плагинов для Figma, а также сборки компонентов разной сложности. Структурировано, выверено, осмысленно"
+				description="Хардкорный курс, который покрывает практически все аспекты дизайна и разработки плагинов для Figma, а также сборки компонентов разной сложности. Структурировано, выверено, осмысленно. Мы будем не просто писать забросы, а анализировать полученный код чтобы докручивать его до необходимого состояния"
 				linkToProgram="https://www.figma.com/proto/vzVCZoKjuAbHN4xikNlKOB/DSA-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0?page-id=&node-id=7-2&starting-point-node-id=7%3A2&mode=design&t=SMp2w0KdDqdS1Esz-1"
 				heroImg="/ai-tech-course.png"
 				timing="3 - 3.5"

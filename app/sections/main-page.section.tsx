@@ -156,10 +156,10 @@ export const MainPageSection: React.FC<IMainPageSectionProps> = ({
 				id="hero-section"
 				className="section-image section-shadow"
 			>
-				<div className="hero-section-left-bg section-shadow"></div>
+				<div className="hero-section-left-bg "></div>
 			</StyledMainPageSection>
 			<StyledMainPageSection id="hero-section">
-				<div className="hero-section-bg section-shadow">
+				<div className="hero-section-bg ">
 					<div className="display-flex flex-column gap-32">
 						<div className="display-flex flex-column gap-16">
 							<h2>{title}</h2>

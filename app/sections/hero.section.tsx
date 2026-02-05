@@ -88,8 +88,12 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
 	statusText,
 }) => {
 	return (
-		<StyledHeroSection heroImg={heroImg} id="hero-section">
-			<div className="hero-section-bg section-shadow">
+		<StyledHeroSection
+			heroImg={heroImg}
+			id="hero-section"
+			className="section-shadow"
+		>
+			<div className="hero-section-bg">
 				{statusText ? (
 					<div className="status">
 						<Badge appearance={status}>{statusText}</Badge>
