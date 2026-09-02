@@ -14,19 +14,18 @@ export const Badge = styled.div<IBadgeProps>`
 	height: 24px;
 	width: auto;
 	padding: 0 16px;
-	background-color: var(--status-bg-default);
 	color: white;
 	position: relative;
 
 	${(props) =>
 		props.appearance === "green" &&
 		`
-        background-color: var(--status-bg-default);
+        background-color: var(--positive-bg-default);
         `}
 
 	${(props) =>
 		props.appearance === "blue" &&
 		`
-        background-color: var(--info-bg-default);
+        background: var(--info-bg-default);
         `}
 `;

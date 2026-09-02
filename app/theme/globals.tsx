@@ -62,10 +62,10 @@ export const Globals = createGlobalStyle`
     --global-bg: var(--grey-50);
     --subsection-bg: var(--grey-100);
     --section-bg: var(--white);
-    --status-bg-subtle: var(--green-50);
-    --status-bg-default: var(--green-500);
-    --info-bg-subtle: var(--green-50);
-    --info-bg-default: var(--green-500);
+    --positive-bg-subtle: var(--green-50);
+    --positive-bg-default: var(--green-500);
+    --info-bg-subtle: var(--blue-50);
+    --info-bg-default: var(--blue-500);
 
     /* TYPOGRAPHY */
     font-family: Inter, sans-serif;
