@@ -29,7 +29,7 @@ export default function Home() {
 		<>
 			<HeroSection
 				heroImg="/sharpedSkills.png"
-				title="Sharped skills"
+				title="Qualifine"
 				subTitle="Квинтэссенция знаний"
 				description="Ускорьте свою карьеру или производительность команды, присоединившись к нашим уникальным курсам по Архитектуре дизайн-систем, продвинутым исследованиям 
 пользовательского опыта и не только!"
