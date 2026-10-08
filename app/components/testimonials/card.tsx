@@ -2,6 +2,7 @@ import React, { HTMLAttributes } from "react";
 import styled from "styled-components";
 
 import Link from "next/link";
+import { withBasePath } from "@/lib/basePath";
 
 interface ICardClient extends HTMLAttributes<HTMLDivElement> {
 	img?: string;
@@ -76,7 +77,7 @@ export const CardClient = ({
 	return (
 		<StyledCardClient>
 			<div className="client-card-header">
-				<img alt="user" src={img} />
+				<img alt="user" src={withBasePath(img || "")} />
 				<div className="client-card-header-content">
 					<h6 className="card-heading-title">{name}</h6>
 					<div className="card-header-subtitles">

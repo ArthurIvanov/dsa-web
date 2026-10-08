@@ -3,6 +3,7 @@ import { Calendar, Clock, Video } from "react-feather";
 import { Detail } from "../components/detail/detail";
 import styled from "styled-components";
 import Link from "next/link";
+import { withBasePath } from "@/lib/basePath";
 
 interface IMainPageSectionProps extends HTMLAttributes<HTMLDivElement> {
 	title?: string;
@@ -54,7 +55,7 @@ const StyledMainPageSection = styled.section<IMainPageSectionProps>`
 	}
 
 	.hero-section-left-bg {
-		background: url(${(props) => props.heroImg});
+		background: url(${(props) => withBasePath(props.heroImg || "")});
 		background-size: auto;
 		background-position: center;
 		background-repeat: no-repeat;

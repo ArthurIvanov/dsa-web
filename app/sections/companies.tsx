@@ -1,6 +1,7 @@
 import ReactComponent, { HTMLAttributes } from "react";
 import styled from "styled-components";
 import { Image } from "../components/img/img";
+import { withBasePath } from "@/lib/basePath";
 
 interface ICompaniesProps extends HTMLAttributes<HTMLDivElement> {}
 
@@ -34,10 +35,10 @@ export const Companies: React.FC<ICompaniesProps> = () => {
 		<StyledCompanies className="container">
 			<h3>Компании, сотрудники которых прошли обучение</h3>
 			<div className="companies-stack">
-				<img src="/MTC_Logo_RGB.png" />
-				<img src="/t-bank.png" />
-				<img src="/rosatom.png" />
-				<img src="/alfaBank.png" />
+				<img src={withBasePath("/MTC_Logo_RGB.png")} />
+				<img src={withBasePath("/t-bank.png")} />
+				<img src={withBasePath("/rosatom.png")} />
+				<img src={withBasePath("/alfaBank.png")} />
 			</div>
 		</StyledCompanies>
 	);

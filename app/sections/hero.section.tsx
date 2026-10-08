@@ -3,6 +3,7 @@ import { Calendar, Clock, Video } from "react-feather";
 import { Detail } from "../components/detail/detail";
 import styled from "styled-components";
 import { Badge } from "../components/badge/badge";
+import { withBasePath } from "@/lib/basePath";
 
 interface IHeroSectionProps extends HTMLAttributes<HTMLDivElement> {
 	title?: string;
@@ -30,7 +31,7 @@ const StyledHeroSection = styled.section<IHeroSectionProps>`
 	overflow: hidden;
 
 	.hero-section-bg {
-		background: url(${(props) => props.heroImg});
+		background: url(${(props) => withBasePath(props.heroImg || "")});
 		background-size: auto;
 		background-position: center;
 		background-repeat: no-repeat;

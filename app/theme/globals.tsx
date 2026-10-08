@@ -1,6 +1,8 @@
 "use client";
 import { createGlobalStyle } from "styled-components";
 
+const assetBase = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const Globals = createGlobalStyle`
 :root {
   --max-width: 1750px;
@@ -333,7 +335,7 @@ p, li {
 }
 
 .about-bg {
-    background: url("/me.png");
+    background: url("${assetBase}/me.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

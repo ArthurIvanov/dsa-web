@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { PostMeta } from "@/lib/posts";
 import styled from "styled-components";
 import { Box } from "../components/box/box";
+import { withBasePath } from "@/lib/basePath";
 
 const BackLink = styled(Link)`
 	display: inline-block;
@@ -116,7 +117,7 @@ export default function ArticlesList({ posts }: { posts: PostMeta[] }) {
 						>
 							{post.image && (
 								<img
-									src={post.image}
+									src={withBasePath(post.image)}
 									alt=""
 									className="item-img"
 								/>

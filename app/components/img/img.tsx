@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from "react";
 import styled from "styled-components";
+import { withBasePath } from "@/lib/basePath";
 
 interface IImage extends HTMLAttributes<HTMLDivElement> {
 	max?: string;
@@ -40,7 +41,7 @@ export const Image = ({
 			max={max}
 			def={def}
 			height={height}
-			path={path}
+			path={withBasePath(path)}
 			className={className}
 			{...props}
 		/>
