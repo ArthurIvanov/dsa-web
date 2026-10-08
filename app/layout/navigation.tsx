@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { NavItems, NavItemsMobile } from "./navData";
 import { useState, useRef } from "react";
 import { CourseDropdown } from "../components/dropdown/dropdown";
+import { withBasePath } from "@/lib/basePath";
 
 const StyledNavBar = styled.nav`
 	display: flex;
@@ -107,7 +108,7 @@ const Navbar = () => {
 				>
 					<Image
 						alt="logo"
-						src="/dsa-logo.svg"
+						src={withBasePath("/dsa-logo.svg")}
 						width={100}
 						height={56}
 					/>

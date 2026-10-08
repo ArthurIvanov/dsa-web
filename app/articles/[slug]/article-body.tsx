@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import type { Post } from "@/lib/posts";
 import styled from "styled-components";
 import { useState } from "react";
+import { withBasePath } from "@/lib/basePath";
 
 const Wrap = styled.article`
 	max-width: 800px;
@@ -115,7 +116,7 @@ export default function ArticleBody({ post }: { post: Post }) {
 				<CoverWrap>
 					<Image
 						className="post-image"
-						src={post.image}
+						src={withBasePath(post.image)}
 						alt=""
 						fill
 						sizes="(max-width: 800px) 100vw, 800px"
