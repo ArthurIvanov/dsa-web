@@ -1,0 +1,15 @@
+# dsaweb static site on ASUSTOR NAS.
+# NAS layout: /volume1/Docker/dsaweb/{docker-compose.yml,site/}
+# HTTPS + domain are handled by the existing Nginx Proxy Manager
+# (proxy host -> http://192.168.1.30:8092, Let's Encrypt enabled).
+name: dsaweb
+
+services:
+  dsaweb:
+    image: nginx:1.27-alpine
+    container_name: dsaweb
+    restart: unless-stopped
+    ports:
+      - "8092:80"
+    volumes:
+      - /volume1/Docker/dsaweb/site:/usr/share/nginx/html:ro

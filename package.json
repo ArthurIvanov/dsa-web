@@ -6,6 +6,7 @@
         "dev": "next dev",
         "build": "next build",
         "build:gh-pages": "next build",
+        "deploy:nas": "./deploy/deploy-nas.sh",
         "deploy:gh-pages": "npm run build:gh-pages && npx --yes gh-pages@6 -d out -b gh-pages --dotfiles",
         "start": "next start",
         "lint": "next lint",
